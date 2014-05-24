@@ -1,0 +1,16 @@
+{
+  "name": "lixor.se",
+  "version": "0.0.0",
+  "description": "lixor.se site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ylva Fredriksson, Ulf Liedberg",
+  "license": "MIT",
+  "dependencies": {
+    "yo": "~1.1",
+    "gulp": "~3.6",
+    "coffee-script": "~1.7"
+  }
+}
