@@ -8,7 +8,9 @@ const browserSync = require("browser-sync"),
       gulp = require('gulp'),
       gutil = require('gulp-util'),
       postcss = require('gulp-postcss'),
-      cssnext = require('cssnext');
+      cssnext = require('cssnext'),
+      postcssNested = require('postcss-nested'),
+      postcssSimpleVars = require('postcss-simple-vars');
 
 const bs = browserSync.create(),
       id = function() {};
@@ -30,7 +32,11 @@ const cpy2Dist = function(src, dest, done) {
 
 const cssTransform = function(src, dest) {
   gulp.src(src, { base: dirs.src })
-    .pipe(postcss([cssnext]).on('error', function(err) { gutil.log(err.message); }))
+    .pipe(postcss([
+      cssnext,
+      postcssNested,
+      postcssSimpleVars
+    ]).on('error', function(err) { gutil.log(err.message); }))
     .pipe(gulp.dest(dest))
     .pipe(bs.stream()); // TODO: should be an argument // {match: '**/*.css'} when using sourcemaps
 }

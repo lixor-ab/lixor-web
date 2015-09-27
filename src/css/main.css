@@ -1,4 +1,196 @@
+/*vars - TODO rename vars to only be semantics and not descriptive of current value*/
+$primary-color: #1cb389; /*#00b488;*/
+$contrast-primary-color: #fff;
+$pinky-color: #e786bb; /*#e984bc;*/
+$wintery-color: #4ad5b2; /*#41d6b2;*/
+$peachy-color: #ec818b; /*#ee8089;*/
+$text-color: #3d322d;
+$grey-color: #b3c1c5;
 
-html {
-  background: whitesmoke;
+$standard-width: 320px;
+$max-width: 640px;
+$font-size-base: 18px;
+$line-height-base: 1.3;
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Palatino;
+  /*'Helvetica Neue';*/
+  font-weight: 100;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  /*not really needed?*/
+  background: #fff;
+}
+
+body > * {
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+
+  text-align: center;
+  font-family: 'Helvetica Neue';
+
+  h1 {
+    margin: 0;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+section {
+  h2 {
+    font-family: 'Helvetica Neue';
+    font-size: 1.5rem;
+  }
+}
+
+.fall-in-love {
+  /*TODO: should be image with primary color "filter"*/
+  background: $primary-color;
+  p {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+  padding: 2rem 4rem;
+}
+
+.why-lixor {
+
+  ul {
+      font-family: Palatino;
+      list-style-type: none;
+      padding: 0;
+  }
+
+  li {
+      margin: 16px 0;
+      position: relative;
+      padding-left: 16px;
+
+      &::before {
+          content: '+';
+          position: absolute;
+          left: 0;
+      }
+  }
+
+  a.book-meeting {
+      width: 100%;
+      border-radius: 36px;
+      text-align: center;
+      display: block;
+      color: $contrast-primary-color;
+      font-family: 'Helvetica Neue';
+      font-weight: normal;
+      background-color: $primary-color;
+      line-height: 3;
+      text-decoration: none;
+      margin: 32px 0;
+  }
+}
+
+.cases {
+    color: $contrast-primary-color; /* only for headers though */
+    margin-bottom: 0;
+    padding: 0;
+
+    .case {
+        padding: 1rem;
+        text-align: center;
+        /*padding: 16px 0;*/
+        h2 {
+            text-transform: uppercase;
+            font-weight: 200;
+            margin: 2rem 0;
+        }
+        blockquote {
+            margin: 0 2rem;
+            font-size: 2rem;
+            font-family: Palatino;
+            font-weight: 100;
+        }
+        .expand-case {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 16px;
+            font-size: 36px;
+            padding: 16px;
+            line-height: 1;
+            color: $contrast-primary-color;
+        }
+    }
+    .case:nth-child(n + 1) {
+        background-color: $pinky-color;
+    }
+    .case:nth-child(n + 2) {
+        background-color: $wintery-color;
+    }
+    .case:nth-child(n + 3) {
+        background-color: $peachy-color;
+    }
+}
+
+/*TODO: should be image of course :)*/
+.how-do-we-help-image {
+    background-color: #ddd;
+    height: 400px;
+    margin-top: 0;
+
+    /*TODO: rip this out later on when images are put in*/
+    position: relative;
+    text-align: center;
+    p {
+        color: $contrast-primary-color;
+        font-size: 24px;
+        font-weight: lighter;
+
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        width: 50%;
+        height: auto;
+        display: table;
+    }
+}
+
+/*TODO: DRY up - looks a lot like .fall-in-love*/
+.how-do-we-help {
+    padding: 0 16px;
+
+    ol {
+        font-family: Palatino;
+    }
+
+    /*TODO: font/image for numbers instead*/
+    li {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+
+    p {
+        font-family: Palatino;
+    }
+
 }
