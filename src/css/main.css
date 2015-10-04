@@ -284,6 +284,12 @@ footer {
         a {
             color: $contrast-primary-color;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            /*line-height: 1;*/
+        }
+        li + li {
+          margin-top: 0.25rem;
         }
         display: inline-flex;
         flex-direction: column;
@@ -292,6 +298,25 @@ footer {
 
         li {
             display: inline-flex;
+        }
+
+        .contact-icon {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 1rem;
+          background: $wintery-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 0.75rem;
+        }
+
+        .contact-envelope-icon {
+          font-size: 1rem;
+        }
+
+        .contact-mobile-icon {
+
         }
 
     }
