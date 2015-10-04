@@ -1,6 +1,7 @@
-// TODO: rambda refactor!
+// TODO: rambda refactor! meh - RxJS refactor! :)
 // TODO: use gulp watch?
 // TODO: use npm vars?
+// TODO: DRY...
 
 "use strict";
 
@@ -21,7 +22,8 @@ const dirs = {
 };
 const globs = {
   html: dirs.src + '/**/*.html',
-  css: dirs.src + '/**/css/*.css'
+  css: dirs.src + '/**/css/*.css',
+  images: dirs.src + '/**/images/*'
 };
 
 const cpy2Dist = function(src, dest, done) {
@@ -44,6 +46,7 @@ const cssTransform = function(src, dest) {
 const initBuild = function() {
   cpy2Dist(globs.html, dirs.dist, id);
   cssTransform(globs.css, dirs.dist);
+  cpy2Dist(globs.images, dirs.dist, id);
 }
 
 bs.watch(globs.html).on('change', function(file) {
@@ -52,6 +55,10 @@ bs.watch(globs.html).on('change', function(file) {
 
 bs.watch(globs.css).on('change', function(file) {
   cssTransform(file, dirs.dist);
+});
+
+bs.watch(globs.images).on('change', function(file) {
+  cpy2Dist(file, dirs.dist, bs.reload);
 });
 
 

@@ -1,5 +1,6 @@
 /*vars - TODO rename vars to only be semantics and not descriptive of current value*/
 $primary-color: #1cb389; /*#00b488;*/
+$primary-color-see-through: rgba(28, 179, 137, 1);
 $contrast-primary-color: #fff;
 $pinky-color: #e786bb; /*#e984bc;*/
 $wintery-color: #4ad5b2; /*#41d6b2;*/
@@ -94,8 +95,15 @@ section {
 }
 
 .fall-in-love {
-  /*TODO: should be image with primary color "filter"*/
-  background: $primary-color;
+  /* tint-filter hack - a color in itself is not allowed */
+  /* so you can do lots with the blend-mode - but it might be better to go with a normal image? */
+  background: linear-gradient(
+                $primary-color-see-through,
+                $primary-color-see-through
+              ),
+              url('../images/hands-bw.jpg') center / cover no-repeat;
+  background-blend-mode: overlay, overlay;
+
   p {
     font-family: $font-family-quotes;
     font-size: 2rem;
