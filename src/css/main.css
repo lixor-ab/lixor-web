@@ -193,8 +193,9 @@ section {
 
 /*TODO: should be image of course :)*/
 .how-do-we-help-image {
-    background-color: #ddd;
-    height: 400px;
+    background: url('../images/work.jpg') center / cover no-repeat,
+                #ddd;
+    height: 400px; /* TODO: what? */
     margin-top: 0;
 
     /*TODO: rip this out later on when images are put in*/
