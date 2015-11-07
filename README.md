@@ -14,6 +14,10 @@
 * performance fixing!
   * images & fonts first
 
+* clean up the code - this is a messy prototype
+* generate markup from markdown (?)
+* use static code generation with React (?)
+
 
 ## Need Torfin:
 * fine-tune white space
