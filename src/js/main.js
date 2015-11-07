@@ -11,7 +11,9 @@ function onToggleCaseExpansion(caseEl) {
 
     e.stopPropagation();
     e.preventDefault();
-    caseEl.classList.toggle('collapsed');
-    caseEl.classList.toggle('expanded');
+    caseEl.classList.toggle('collapsed'); // too big scope?
+    caseEl.classList.toggle('expanded'); // if we need it
+    caseEl.querySelector('i.fa').classList.toggle('fa-arrow-up');
+    caseEl.querySelector('i.fa').classList.toggle('fa-arrow-circle-down');
   }
 }
