@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- TODO: set on HTTP header -->
+        <!-- TODO: UTF8 in email subject in mailto URL? That works in general? -->
 
         <!-- TODO: use only one of google fonts or typekit -->
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400&family=Roboto:500' rel='stylesheet' type='text/css'>
@@ -49,7 +50,7 @@
           <p>
               I så fall är Lixor för dig!
           </p>
-          <a class="book-meeting" href="#">Boka ett möte nu!</a>
+          <a class="book-meeting" href="mailto:hej@lixor.se?subject=Möte">Boka ett möte nu!</a>
       </section>
 
       <section class="cases">
@@ -159,14 +160,13 @@
 
       <footer>
           <h2>Tveka inte att lägga ut på en fantastisk förändringsresa med Lixor!</h2>
-          <a class="book-meeting" href="#">Boka ett möte nu!</a>
+          <a class="book-meeting" href="mailto:hej@lixor.se?subject=Möte">Boka ett möte nu!</a>
 
           <ul class="contacts">
               <li>
                 <a class="contact contact--email" href="mailto:hej@lixor.se">
                   <i class="fa fa-envelope contact-icon contact-envelope-icon"></i>
                   hej@lixor.se
-                  </a>
               </li>
               <li>
                 <a class="contact contact--phone" href="tel:+46 739 85 33 53">
