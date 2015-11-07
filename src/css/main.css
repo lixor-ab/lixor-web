@@ -155,7 +155,19 @@ section {
     margin-bottom: 0;
     padding: 0;
 
-    .case {
+
+    .case.expanded {
+      i.fa {
+        transform: rotate(180deg);
+      }
+    }
+    .case.collapsed {
+      .case-body {
+        display: none; /* we probably want some nifty animation later on... */
+      }
+    }
+
+    .case-header {
         padding: 1rem;
         text-align: center;
         /*padding: 16px 0;*/
@@ -180,14 +192,21 @@ section {
             color: $contrast-primary-color;
         }
     }
-    .case:nth-child(n + 1) {
+    .case:nth-child(n + 1) .case-header {
         background-color: $pinky-color;
     }
-    .case:nth-child(n + 2) {
+    .case:nth-child(n + 2) .case-header {
         background-color: $wintery-color;
     }
-    .case:nth-child(n + 3) {
+    .case:nth-child(n + 3) .case-header {
         background-color: $peachy-color;
+    }
+
+    /* black and white? really? */
+    .case-body {
+      padding: 1rem;
+      background: $white-color;
+      color: #000;
     }
 }
 
