@@ -1,5 +1,6 @@
 {
   "name": "lixor.se",
+  "repository": "git@github.com:uliedberg/lixor-web.git",
   "version": "0.0.0",
   "description": "lixor.se site",
   "main": "index.js",
@@ -11,20 +12,20 @@
   "author": "Ylva Fredriksson, Ulf Liedberg",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^5.2.0",
-    "browser-sync": "^2.8.2",
-    "cssnext": "^1.8.3",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
-    "gulp-postcss": "^5.1.10",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-util": "^3.0.6",
-    "postcss": "^4.1.16",
-    "postcss-easings": "^0.2.0",
-    "postcss-mixins": "^0.4.0",
-    "postcss-nested": "^0.3.2",
-    "postcss-simple-vars": "^0.3.0",
-    "rimraf": "^2.4.2"
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "cssnext": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-postcss": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "*",
+    "postcss": "*",
+    "postcss-easings": "*",
+    "postcss-mixins": "*",
+    "postcss-nested": "*",
+    "postcss-simple-vars": "*",
+    "rimraf": "*"
   },
   "dependencies": {}
 }
