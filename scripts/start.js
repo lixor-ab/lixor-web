@@ -13,7 +13,11 @@ const browserSync = require("browser-sync"),
       cssnext = require('cssnext'),
       postcssNested = require('postcss-nested'),
       postcssSimpleVars = require('postcss-simple-vars'),
-      babel = require('gulp-babel');
+      cssnano = require('cssnano'),
+      babel = require('gulp-babel'),
+      imagemin = require('gulp-imagemin'),
+      uglify = require('gulp-uglify'),
+      minifyHtml = require('gulp-minify-html');
 
 
 const bs = browserSync.create(),
@@ -31,38 +35,56 @@ const globs = {
 };
 
 const cpy2Dist = function(src, dest, done) {
-  gulp.src(src, { base: dirs.src })
+  return gulp.src(src, { base: dirs.src })
     .pipe(gulp.dest(dest))
     .on('end', done);
 }
 
+const htmlTransform = function(src, dest) {
+  return gulp.src(src)
+    .pipe(minifyHtml()) // inline?
+    .pipe(gulp.dest(dest));
+}
+
 const cssTransform = function(src, dest) {
-  gulp.src(src, { base: dirs.src })
+  return gulp.src(src, { base: dirs.src })
     .pipe(postcss([
       cssnext,
       postcssNested,
-      postcssSimpleVars
+      postcssSimpleVars,
+      cssnano // source maps or not always...
     ]).on('error', function(err) { gutil.log(err.message); }))
     .pipe(gulp.dest(dest))
     .pipe(bs.stream()); // TODO: should be an argument // {match: '**/*.css'} when using sourcemaps
 }
 
 const jsTransform = function(src, dest) {
-  gulp.src(src, { base: dirs.src})
+  return gulp.src(src, { base: dirs.src})
     .pipe(babel().on('error', function(err) { gutil.log(err.message); }))
+    .pipe(uglify())
     .pipe(gulp.dest(dest))
     .pipe(bs.stream())
 }
 
+const imageTransform = function(src, dest) {
+  return gulp.src(src)
+      .pipe(imagemin({
+          progressive: true
+      }))
+      .pipe(gulp.dest(dest))
+      .pipe(bs.stream());
+}
+
+// might have to care about ordering if we want to inline in htmlTransform
 const initBuild = function() {
-  cpy2Dist(globs.html, dirs.dist, id);
   cssTransform(globs.css, dirs.dist);
   jsTransform(globs.js, dirs.dist);
-  cpy2Dist(globs.images, dirs.dist, id);
+  imageTransform(globs.images, dirs.dist);
+  htmlTransform(globs.html, dirs.dist);
 }
 
 bs.watch(globs.html).on('change', function(file) {
-  cpy2Dist(file, dirs.dist, bs.reload);
+  htmlTransform(file, dirs.dist);
 });
 
 bs.watch(globs.css).on('change', function(file) {
@@ -74,7 +96,7 @@ bs.watch(globs.js).on('change', function(file) {
 });
 
 bs.watch(globs.images).on('change', function(file) {
-  cpy2Dist(file, dirs.dist, bs.reload);
+  imageTransform(file, dirs.dist);
 });
 
 
