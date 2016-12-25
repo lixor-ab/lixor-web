@@ -1,0 +1,9 @@
+title = "Lixor"
+baseurl = "http://www.lixor.se/"
+languageCode = "sv-se"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+group = "groups"
+

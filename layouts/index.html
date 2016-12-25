@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+  </head>
+  <body>
+    <h1>{{ .Title }}</h1>
+
+    <ul>
+    {{ range .Site.Taxonomies.groups.mainsections }}
+      <li>
+        {{ .Page.Summary  }}
+      </li>
+    {{ end }}
+    </ul>
+
+    {{ partial "footer.html" . }}
+
+  </body>
+</html>
+
