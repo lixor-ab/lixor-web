@@ -35,7 +35,7 @@ header {
 
 .main {
   background: var(--beige);
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: rgba(0, 0, 0, 0.7);
 }
 .main > * {
