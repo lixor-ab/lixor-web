@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <h1>{{ .Title }}</h1>
+    <div class="main">
+
+    <header>
+      <h1 class="h1-hidden">Lixor</h1>
+      <div class="logo">
+        <div class="logo--normal">LIX</div>
+        <br>
+        <div class="logo--flip">OR<span class="logo--dot">.</span></div>
+      </div>
+    </header>
 
     <ul>
     {{ range .Site.Taxonomies.groups.mainsections }}
@@ -12,6 +22,8 @@
       </li>
     {{ end }}
     </ul>
+
+    </div>
 
     {{ partial "footer.html" . }}
 

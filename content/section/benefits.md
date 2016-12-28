@@ -6,11 +6,11 @@ groups_weight = 4
 
 +++
 
-# Nyttan.
+## Nyttan.
 Vad ska du med en konsult om du kan göra själv? Ta med dig några av våra
 erfarenheter i ditt eget arbete.
 <!--more-->
 
-## Nyttan lite annat
+### Nyttan lite annat
 Und so weiter...
 

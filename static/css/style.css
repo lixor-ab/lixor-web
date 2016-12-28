@@ -1,0 +1,167 @@
+
+html {
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: normal;
+  line-height: 1.37;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 32px;
+  margin-top: 2rem;
+  margin-bottom: 64px;
+  margin-bottom: 4rem;
+}
+
+.main {
+  background: #e5dac5;
+  padding: 16px;
+  padding: 1rem;
+  color: rgba(0, 0, 0, .7);
+}
+.main > * {
+  max-width: 352px;
+  max-width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background: #000000;
+  color: #ff4476;
+  padding: 16px;
+  padding: 1rem;
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-bottom: 64px;
+  padding-bottom: 4rem;
+}
+footer > * {
+  max-width: 352px;
+  max-width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main ul {
+  list-style: none;
+  padding-left: 0;
+}
+.main li {
+  padding-left: 16px;
+  padding-left: 1rem;
+  position: relative;
+  /*text-indent: 0.7rem;*/
+}
+.main li:before {
+  position: absolute;
+  content: "•";
+  color: #ff4476;
+  font-size: 64px;
+  font-size: 4rem;
+  left: -28px;
+  left: -1.75rem;
+  top: 16px;
+  top: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem; /* ugly */
+}
+
+.main li h2 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 32px;
+  font-size: 2rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+  line-height: 32px;
+  line-height: 2rem;
+}
+
+.main li h2+p {
+  margin-top: 0;
+}
+
+.main li p:last-child {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
+footer .quote {
+  font-family: Lora;
+  font-size: 28px;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+footer .quote-source {
+  color: #ffd48c;
+  text-align: center;
+}
+
+footer .mail-container {
+  text-align: center;
+}
+footer .highfive-mail {
+  display: inline-block;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+  background: #ffd48c;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.h1-hidden {
+  display: none;
+}
+
+/* TODO: sort out the logo :) */
+.logo {
+  color: #000000;
+  font-family: "Helvetica Neue";
+  font-weight: 900;
+  line-height: 0.9;
+  padding: 16px;
+  padding: 1rem;
+  font-size: 72px;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.logo--footer {
+  color: #ffffff;
+  font-size: 28px;
+  font-size: 1.75rem;
+  margin-top: 64px;
+  margin-top: 4rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+.logo--normal {
+  display: inline-block;
+}
+
+.logo--flip {
+  display: inline-block;
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+  margin-left: -17.6px;
+  margin-left: -1.1rem;
+}
+
+.logo--dot {
+  color: #ff4476;
+  font-family: serif;
+  line-height: 0; /* TODO: hack */
+}
+
+

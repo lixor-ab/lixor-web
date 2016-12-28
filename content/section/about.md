@@ -6,22 +6,22 @@ groups_weight = 2
 
 +++
 
-# Vem och vad.
+## Vem och vad.
 Hos Lixor får du rätt känsla och driv i projekten – kunskapen får du på köpet.
 Kolla in de som jobbar här.
 <!--more-->
 
-## Ylva Fredriksson
+### Ylva Fredriksson
 Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.
 * mobilnr
 * epost
 
-## Rut Andersson
+### Rut Andersson
 Fryktlös effektmakare med projektledning och sociala medier som bread n butter.
 * mobilnr
 * epost
 
-## Torfinn Almers
+### Torfinn Almers
 Tänkande och visualiserande designleder. Skriver den här svadan och håller tummarna.
 * mobilnr
 * epost

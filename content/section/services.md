@@ -6,21 +6,21 @@ groups_weight = 1
 
 +++
 
-# Tjänsterna.
+## Tjänsterna.
 Självklart ska du ha lite Lixor. Varför köpa in en häst när du kan rida in på
 mötena på en enhörning?
 <!--more-->
 
-## Liten Lixor
+### Liten Lixor
 Bjud in oss för en halvdag som kommer utveckla hur ni genomför era projekt.
 
-## Leading Lixor
+### Leading Lixor
 Ett program för ledningsgrupper som vill utveckla agil kompetensförståelse och
 beslutsförmåga.
 
-## Mixor
+### Mixor
 Vår workshop som vi skräddarsyr för ditt företag. Have fun blowing your mind!
 
-## Full Lixor
+### Full Lixor
 Hyr in en av våra konsulter hands-on i ditt projekt om du vill ha kul, växa och
 se resultat.

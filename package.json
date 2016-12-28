@@ -1,0 +1,31 @@
+{
+  "name": "lixor-web",
+  "version": "0.0.2",
+  "description": "Lixor web",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uliedberg/lixor-web.git"
+  },
+  "keywords": [
+    "Lixor",
+    "web",
+    "static"
+  ],
+  "author": "Ulf Liedberg, Torfinn Almers, Rut Andersson, Ylva Fredriksson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uliedberg/lixor-web/issues"
+  },
+  "homepage": "https://github.com/uliedberg/lixor-web#readme",
+  "devDependencies": {
+    "postcss-cli": "^2.6.0"
+  },
+  "dependencies": {
+    "postcss": "^5.2.8",
+    "postcss-cssnext": "^2.9.0"
+  }
+}
