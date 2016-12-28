@@ -12,21 +12,37 @@ body {
 }
 
 header {
-  margin-top: 32px;
-  margin-top: 2rem;
-  margin-bottom: 64px;
-  margin-bottom: 4rem;
-}
-
-.main {
+  margin: 0;
+  padding-top: 32px;
+  padding-top: 2rem;
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
   background: #e5dac5;
-  padding: 16px 32px;
-  padding: 1rem 2rem;
-  color: rgba(0, 0, 0, .7);
 }
-.main > * {
-  max-width: 352px;
-  max-width: 22rem;
+/*
+{
+  background: var(--beige);
+  padding: 1rem 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+*/
+.section-container {
+  padding-top: 16px;
+  padding-top: 1rem;
+  background: #e5dac5;
+}
+.section-container.expanded {
+  background: #7f4e99;
+}
+.section-container.expanded .section {
+  color: rgba(255, 255, 255, .8);
+}
+.section-container.expanded .section h3 {
+  color: #ffd48c;
+}
+/* just section then right :) */
+.section-container > * {
+  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,45 +50,42 @@ header {
 footer {
   background: #000000;
   color: #ff4476;
-  padding: 16px;
-  padding: 1rem;
-  padding-top: 48px;
-  padding-top: 3rem;
-  padding-bottom: 64px;
-  padding-bottom: 4rem;
+  padding: 48px 24px 64px;
+  padding: 3rem 1.5rem 4rem;
 }
 footer > * {
-  max-width: 352px;
-  max-width: 22rem;
+  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main ul {
-  list-style: none;
-  padding-left: 0;
-}
-.main li {
-  padding-left: 16px;
-  padding-left: 1rem;
+.section {
+  margin: 0 16px 0 40px;
+  margin: 0 1rem 0 2.5rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
   position: relative;
-  /*text-indent: 0.7rem;*/
+  color: rgba(0, 0, 0, .7);
+  max-width: 375px;
 }
-.main li:before {
+
+/* TODO: do something more explicit size-wise? */
+.section:before {
   position: absolute;
   content: "•";
   color: #ff4476;
-  font-size: 64px;
-  font-size: 4rem;
-  left: -28px;
-  left: -1.75rem;
-  top: 16px;
-  top: 1rem;
+  font-family: serif;
+  font-size: 80px;
+  font-size: 5rem;
+  left: -32px;
+  left: -2rem;
+  top: 20.8px;
+  top: 1.3rem;
   line-height: 24px;
   line-height: 1.5rem; /* ugly */
 }
 
-.main li h2 {
+.section h2 {
   display: inline-block;
   font-weight: normal;
   font-size: 32px;
@@ -85,13 +98,16 @@ footer > * {
   line-height: 2rem;
 }
 
-.main li h2+p {
+.section h2+p {
   margin-top: 0;
 }
 
-.main li p:last-child {
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
+.section .section-body {
+  display: none;
+}
+
+.section-container.expanded .section-body {
+  display: block;
 }
 
 footer .quote {

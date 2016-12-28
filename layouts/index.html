@@ -14,8 +14,6 @@
   </head>
   <body>
 
-    <div class="main">
-
     <header>
       <h1 class="h1-hidden">Lixor</h1>
       <div class="logo">
@@ -25,15 +23,18 @@
       </div>
     </header>
 
-    <ul>
     {{ range .Site.Taxonomies.groups.mainsections }}
-      <li>
+    <div class="section-container">
+      <div class="section">
         {{ .Page.Summary  }}
-      </li>
-    {{ end }}
-    </ul>
 
+        <div class="section-body">
+          {{ $body := replace .Page.Content .Page.Summary "" }}
+          {{ $body | safeHTML }}
+        </div>
+      </div>
     </div>
+    {{ end }}
 
     {{ partial "footer.html" . }}
 

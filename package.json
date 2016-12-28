@@ -22,10 +22,12 @@
   },
   "homepage": "https://github.com/uliedberg/lixor-web#readme",
   "devDependencies": {
-    "postcss-cli": "^2.6.0"
-  },
-  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "postcss-cli": "^2.6.0",
+    "babel-preset-env": "^1.1.4",
     "postcss": "^5.2.8",
     "postcss-cssnext": "^2.9.0"
+  },
+  "dependencies": {
   }
 }
