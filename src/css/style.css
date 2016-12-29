@@ -18,6 +18,10 @@
     --small-max-width: 375px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   font-family: "Lato";
@@ -35,7 +39,29 @@ header {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: var(--beige);
+  position: relative;
 }
+
+.header-graphics {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  max-width: var(--small-max-width);
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+
+.header-graphics-v2 {
+  display: none;
+  position: absolute;
+  top: 25%;
+  max-width: var(--small-max-width);
+  left: 50%;
+  transform: translateX(-50%) scale(2);
+  z-index: 1;
+}
+
 /*
 {
   background: var(--beige);
@@ -67,6 +93,9 @@ footer {
   background: var(--black);
   color: var(--warm-pink);
   padding: 3rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
 }
 footer > * {
   max-width: var(--small-max-width);
@@ -74,9 +103,23 @@ footer > * {
   margin-right: auto;
 }
 
+.footer-graphics {
+  position: absolute;
+  top: 25%;
+  max-width: var(--small-max-width);
+  left: 50%;
+  transform: translateX(-50%) scale(2);
+  z-index: -1;
+}
+
+.footer-graphics-container {
+  overflow: hidden;
+
+}
+
 .section {
-  margin: 0 1rem 0 2.5rem;
-  padding-bottom: 1rem;
+  margin: 0 auto;
+  padding: 0 1rem 1rem 2.5rem;
   position: relative;
   color: rgba(0, 0, 0, 0.7);
   max-width: var(--small-max-width);
@@ -89,7 +132,7 @@ footer > * {
   color: var(--warm-pink);
   font-family: serif;
   font-size: 5rem;
-  left: -2rem;
+  left: 0.5rem;
   top: 1.3rem;
   line-height: 1.5rem; /* ugly */
 }
@@ -101,6 +144,10 @@ footer > * {
   margin-top: 1rem;
   margin-bottom: 0.75rem;
   line-height: 2rem;
+}
+
+.section h3 {
+  font-weight: normal;
 }
 
 .section h2+p {
@@ -173,6 +220,7 @@ footer .highfive-mail {
   color: var(--warm-pink);
   font-family: serif;
   line-height: 0; /* TODO: hack */
+  z-index: -1;
 }
 
 
