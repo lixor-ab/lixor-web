@@ -24,7 +24,7 @@
 
 html {
   font-size: 16px;
-  font-family: "Lato";
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   line-height: 1.37;
 }
@@ -37,7 +37,7 @@ body {
 header {
   margin: 0;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   background: var(--beige);
   position: relative;
 }
@@ -70,7 +70,6 @@ header {
 }
 */
 .section-container {
-  padding-top: 1rem;
   background: var(--beige);
 }
 .section-container.expanded {
@@ -87,6 +86,10 @@ header {
   max-width: var(--small-max-width);
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-container:last-of-type {
+  padding-bottom: 1.5rem;
 }
 
 footer {
@@ -119,7 +122,7 @@ footer > * {
 
 .section {
   margin: 0 auto;
-  padding: 0 1rem 1rem 2.5rem;
+  padding: 1.5rem 1rem 1.5rem 2.5rem;
   position: relative;
   color: rgba(0, 0, 0, 0.7);
   max-width: var(--small-max-width);
@@ -133,25 +136,33 @@ footer > * {
   font-family: serif;
   font-size: 5rem;
   left: 0.5rem;
-  top: 1.3rem;
+  top: 1.8rem;
   line-height: 1.5rem; /* ugly */
 }
 
 .section h2 {
+  margin-top: 0; /* nasty fix for footer spacing */
   display: inline-block;
   font-weight: normal;
   font-size: 2rem;
-  margin-top: 1rem;
   margin-bottom: 0.75rem;
   line-height: 2rem;
 }
 
 .section h3 {
   font-weight: normal;
+  margin-bottom: 0.25rem;
 }
 
 .section h2+p {
   margin-top: 0;
+}
+
+.section p {
+  margin: 0;
+}
+.section p+p {
+  margin-top: 0.5rem;
 }
 
 .section .section-body {
@@ -163,7 +174,7 @@ footer > * {
 }
 
 footer .quote {
-  font-family: Lora;
+  font-family: 'Lora', serif;
   font-size: 1.75rem;
   text-align: center;
   margin-bottom: 1rem;
