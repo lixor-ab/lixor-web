@@ -50,12 +50,12 @@ Edit away & it's livereloaded at http://localhost:1313 (listening on 0.0.0.0 so 
     > mkdir public
     > git clone git@github.com:uliedberg/lixor-web.git public
     > cd public
-    > git co gh-pages
+    > git checkout gh-pages
     > cd ..
     > yarn dist
-    > cd dist
+    > cd public
     > git add .
-    > git c -m "Build ..."
+    > git commit -m "Build ..."
     > git push
 
 Ehm - this should be automated...
