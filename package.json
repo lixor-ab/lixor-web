@@ -8,7 +8,7 @@
     "postcss-dev": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css -w",
     "babel-dev": "babel src/js -o static/js/index.js -w",
     "dist": "hugo -s . && postcss -c postcss.config.json -o public/static/css/style.css src/css/style.css && mkdir public/static/js && babel src/js -o public/static/js/index.js",
-    "clean": "rimraf public",
+    "clean": "rimraf public/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
