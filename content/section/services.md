@@ -23,4 +23,4 @@ Vår workshop som vi skräddarsyr för ditt företag. Have fun blowing your mind
 
 ### Full Lixor
 Hyr in en av våra konsulter hands-on i ditt projekt om du vill ha kul, växa och
-se resultat.
+se resultatr!
