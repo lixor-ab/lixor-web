@@ -2,6 +2,7 @@
 
 ## TODO
  * make it build on travis
+ * automate the github pages deploy properly - only manual now
  * show Torfinn & Rut
      * go over fonts & line height
      * animations/transitions!
@@ -25,5 +26,5 @@
  * add web fonts!
  * clean up build/dev "scripts" - add basics
  * deploy it somewhere!
-    * using github pages for now
+     * using github pages for now
 
