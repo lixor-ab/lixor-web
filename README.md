@@ -34,6 +34,15 @@ https://gohugo.io/content/example/ & in [content](content).
 * babel for js
 
 
+## Basic dev env setup
+* install node (e.g. https://github.com/creationix/nvm#installation + `> nvm install 7.3.0`
+* install homebrew (http://brew.sh/)
+* `> brew update`
+* install yarn (`> brew install yarn`)
+* install hugo (`> brew install hugo`)
+* do `> yarn` in repo dir
+
+
 ## Dev
 
 All commands in different shells:
