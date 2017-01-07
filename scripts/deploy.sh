@@ -60,6 +60,8 @@ if [ -z "`git diff`" ] ; then
 fi
 
 
+echo "{\"version\": \"${SHA}\"}" > version.json
+
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
 git add .

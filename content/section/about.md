@@ -13,16 +13,19 @@ Kolla in de som jobbar här.
 
 ### Ylva Fredriksson
 Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.
+
 * mobilnr
 * epost
 
 ### Rut Andersson
 Fryktlös effektmakare med projektledning och sociala medier som bread n butter.
+
 * mobilnr
 * epost
 
 ### Torfinn Almers
 Tänkande och visualiserande designleder. Skriver den här svadan och håller tummarna.
+
 * mobilnr
 * epost
 

@@ -31,7 +31,7 @@ https://gohugo.io/content/example/ & in [content](content).
 ## The rest
 * postcss-cssnext for styling
 * babel for js
-* travis-ci for CI & deploy (see [.travis.yml](.travis.yml) & [scripts/deploy.sh](scripts/deploy.sh)
+* travis-ci for CI & deploy (see [.travis.yml](.travis.yml) & [scripts/deploy.sh](scripts/deploy.sh))
 
 
 ## Basic dev env setup
@@ -55,6 +55,8 @@ Edit away & it's livereloaded at http://localhost:1313 (listening on 0.0.0.0 so 
 
 
 ## Deploy
-Deploy (to github pages), happens via travis-ci. Right now it can be access at: http://uliedberg.github.io/lixor-web.
+Deploy (to github pages), happens via travis-ci.
+
+Right now it can be accessed at: https://uliedberg.github.io/lixor-web.
 
 
