@@ -1,0 +1,13 @@
+before_install:
+  - curl -Os https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
+  - sudo dpkg -i hugo_0.18.1-64bit.deb
+script: bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: a46ce31c1990
+language: node_js
+node_js:
+- stable
+branches:
+  except:
+  - gh-pages
