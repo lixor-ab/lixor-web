@@ -1,5 +1,5 @@
 before_install:
-  - curl -Os https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
+  - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
   - sudo dpkg -i hugo_0.18.1-64bit.deb
 script: bash ./deploy.sh
 env:
