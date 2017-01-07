@@ -48,7 +48,9 @@
     {{ range .Site.Taxonomies.groups.mainsections }}
     <div class="section-container">
       <div class="section">
-        {{ .Page.Summary  }}
+        <div class="section-summary">
+          {{ .Page.Summary  }}
+        </div>
 
         <div class="section-body">
           {{ $body := replace .Page.Content .Page.Summary "" }}

@@ -98,12 +98,12 @@ footer {
   padding: 3rem 1.5rem 4rem;
   position: relative;
   overflow: hidden;
-  z-index: -2;
 }
 footer > * {
   max-width: var(--small-max-width);
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .footer-graphics {
@@ -112,7 +112,6 @@ footer > * {
   max-width: var(--small-max-width);
   left: 50%;
   transform: translateX(-50%) scale(2);
-  z-index: -1;
 }
 
 .footer-graphics-container {
@@ -165,12 +164,30 @@ footer > * {
   margin-top: 0.5rem;
 }
 
+/* TODO: what character - and what to do in expanded section? */
+/* might as well do css circle + any arrow? */
+.section .section-summary p:last-of-type:after {
+  content: "➲";
+  color: var(--warm-pink);
+  font-size: 1.5rem;
+  line-height: 1rem;
+  vertical-align: sub; /*middle*/
+  font-family: sans-serif;
+
+  display: none;
+}
 .section .section-body {
   display: none;
 }
 
 .section-container.expanded .section-body {
   display: block;
+}
+
+.section .read-more {
+  text-decoration: none;
+  color: #ff4476;
+  font-family: serif;
 }
 
 footer .quote {
