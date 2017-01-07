@@ -10,17 +10,12 @@ DIST_DIR="public"
 
 if [ -n "$TRAVIS_BUILD_ID" ]; then
 
-  echo "we are in travis land"
-
   # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
   if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
     echo "Skipping deploy; just doing a build."
     yarn run dist
     exit 0
   fi
-
-  git config user.name "Travis CI"
-  git config user.email "ulf@alfhild.io"
 
   # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
   ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
@@ -54,6 +49,9 @@ yarn run dist
 
 # Now let's go have some fun with the cloned repo
 cd $DIST_DIR
+
+git config user.name "Travis CI"
+git config user.email "ulf@alfhild.io"
 
 # If there are no changes (e.g. this is a README update) then just bail.
 if [ -z "`git diff`" ] ; then
