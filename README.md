@@ -1,16 +1,15 @@
 # Lixor web
 
+[![Build Status](https://travis-ci.org/uliedberg/lixor-web.svg?branch=master)](https://travis-ci.org/uliedberg/lixor-web)
 
 ## TODO
-* make it build on travis ci
-* automate the github pages deploy properly - only manual now
 * show Torfinn & Rut
     * go over fonts & line height
     * animations/transitions!
     * show hugo
 * add SVG logos (?)
     * and full screen graphics? (show footer)
-* automate production
+* automate production properly with correct domain + CDN (?)
     * show them again :)
 * robots.txt et al
 * do wider screens
@@ -32,6 +31,7 @@ https://gohugo.io/content/example/ & in [content](content).
 ## The rest
 * postcss-cssnext for styling
 * babel for js
+* travis-ci for CI & deploy (see [.travis.yml] & [scripts/deploy.sh]
 
 
 ## Basic dev env setup
@@ -55,19 +55,6 @@ Edit away & it's livereloaded at http://localhost:1313 (listening on 0.0.0.0 so 
 
 
 ## Deploy
-
-    > mkdir public
-    > git clone git@github.com:uliedberg/lixor-web.git public
-    > cd public
-    > git checkout gh-pages
-    > cd ..
-    > yarn dist
-    > cd public
-    > git add .
-    > git commit -m "Build ..."
-    > git push
-
-Ehm - this should be automated...
-
+Deploy (to github pages), happens via travis-ci.
 
 
