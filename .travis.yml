@@ -1,6 +1,7 @@
 before_install:
   - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
-  - sudo dpkg -i hugo_0.18.1-64bit.deb
+  - dpkg -i hugo_0.18.1-64bit.deb --force-not-root --root=$HOME
+  - export PATH=$PATH:$HOME/bin/
 script: bash ./scripts/deploy.sh
 env:
   global:
@@ -8,6 +9,7 @@ env:
 language: node_js
 node_js:
   - stable
+cache: yarn
 branches:
   except:
     - gh-pages
