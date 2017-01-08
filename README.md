@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/uliedberg/lixor-web.svg?branch=master)](https://travis-ci.org/uliedberg/lixor-web)
 
 ## TODO
+* add slack notification on deploy from travis :)
 * show Torfinn & Rut
     * go over fonts & line height
     * animations/transitions!
