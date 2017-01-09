@@ -14,8 +14,8 @@ Kolla in de som jobbar här.
 ### Ylva Fredriksson
 Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.
 
-* mobilnr
-* epost
+* mobilnr:[073-985 33 53](tel:+46739853353)
+* mail:[ylva.fredriksson@lixor.se](mailto:ylva.fredriksson@lixor.se)
 * [Linkedin](https://se.linkedin.com/in/ylvafredriksson)
 
 ### Rut Andersson
