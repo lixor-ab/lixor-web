@@ -8,7 +8,7 @@ groups_weight = 2
 
 ## Vem och vad.
 Hos Lixor får du rätt känsla och driv i projekten – kunskapen får du på köpet.
-Kolla in de som jobbar här.
+Kolla in de som jobbar här. Här är vi!
 <!--more-->
 
 ### Ylva Fredriksson
