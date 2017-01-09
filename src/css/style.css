@@ -171,15 +171,18 @@ footer > * {
 /* TODO: what character - and what to do in expanded section? */
 /* might as well do css circle + any arrow? */
 .section .section-summary p:last-of-type:after {
-  content: "➲";
+  content: "➜";
   color: var(--warm-pink);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1rem;
-  vertical-align: sub; /*middle*/
+  vertical-align: middle; /* sub */
   font-family: sans-serif;
+}
 
+.section-container.expanded .section .section-summary p:last-of-type:after {
   display: none;
 }
+
 .section .section-body {
   display: none;
 }
@@ -254,5 +257,3 @@ footer .highfive-mail {
   line-height: 0; /* TODO: hack */
   z-index: -1;
 }
-
-
