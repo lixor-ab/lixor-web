@@ -34,6 +34,10 @@ body {
   padding: 0;
 }
 
+a {
+  color: var(--warm-pink);
+}
+
 header {
   margin: 0;
   padding-top: 2rem;
