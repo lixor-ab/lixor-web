@@ -12,10 +12,11 @@ Kolla in de som jobbar här.
 <!--more-->
 
 ### Ylva Fredriksson
-Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.[https://se.linkedin.com/in/ylvafredriksson]
+Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.
 
 * mobilnr
 * epost
+* [Linkedin](https://se.linkedin.com/in/ylvafredriksson)
 
 ### Rut Andersson
 Fryktlös effektmakare med projektledning och sociala medier som bread n butter.
