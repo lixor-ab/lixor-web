@@ -19,6 +19,12 @@ a {
   color: #ff4476;
 }
 
+li a {
+  margin: 4px 0;
+  margin: 0.25rem 0;
+  display: inline-block; /* TODO: good idea? */
+}
+
 header {
   margin: 0;
   padding-top: 32px;
