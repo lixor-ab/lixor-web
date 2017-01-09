@@ -12,7 +12,7 @@ Kolla in de som jobbar här.
 <!--more-->
 
 ### Ylva Fredriksson
-Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.
+Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.[https://se.linkedin.com/in/ylvafredriksson]
 
 * mobilnr
 * epost
