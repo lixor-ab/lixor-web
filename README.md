@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/uliedberg/lixor-web.svg?branch=master)](https://travis-ci.org/uliedberg/lixor-web)
 
 ## TODO
-* add slack notification on deploy from travis :)
 * show Torfinn & Rut
     * go over fonts & line height
     * animations/transitions!
@@ -14,6 +13,9 @@
     * show them again :)
 * robots.txt et al
 * do wider screens
+* add analytics (google?)
+* add service worker for offline exprience
+   * maybe, just maybe, we should wait for some analytics data ;)
 * add article / blog post template
 * add way to navigate main -> post
 
