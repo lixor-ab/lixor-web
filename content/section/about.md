@@ -18,14 +18,22 @@ Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.
 * [ylva.fredriksson@lixor.se](mailto:ylva.fredriksson@lixor.se)
 * [Linkedin](https://se.linkedin.com/in/ylvafredriksson)
 
-### Rut Andersson
-Fryktlös effektmakare med projektledning och sociala medier som bread n butter.
+“Hur gör vi det här 100 gånger bättre samtidigt som vi har kul”
 
-* mobilnr
-* epost
+### Rut Andersson
+Orädd effektmakare med projektledning och sociala medier som bread n butter.
+
+* [070-877 97 56](tel:+46708779756)
+* [rut.anderson@lixor.se](mailto:rut.anderson@lixor.se)
+* [Linkedin](https://se.linkedin.com/in/rutanderson)
+
+“För den som har en hammare är varje problem en spik”
 
 ### Torfinn Almers
 Tänkande och visualiserande designleder. Skriver den här svadan och håller tummarna.
 
-* mobilnr
-* epost
+* [070-765 94 64](tel:+46707659464)
+* [torfinn.almers@lixor.se](mailto:torfinn.almers@lixor.se)
+* [Linkedin](https://se.linkedin.com/in/torfinn)
+
+“Varför nöja sig med en häst när du kan rida in på en enhörning”
