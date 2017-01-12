@@ -6,7 +6,7 @@ groups_weight = 1
 
 +++
 
-## Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi samlat ett axplock av hur vi haft förmånen att hjälpa andra företag.
+# Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi samlat ett axplock av hur vi haft förmånen att hjälpa andra företag.
 
 ### Skandia
 Tillsamans med ledningsgruppen för marknadsavdelningen kickstartade vi deras nya agila arbetsätt genom att:
