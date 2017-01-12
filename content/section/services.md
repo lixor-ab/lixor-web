@@ -6,7 +6,7 @@ groups_weight = 1
 
 +++
 
-## Så här har vi hjälpt andra
+## Så här har vi hjälpt andra.
 Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi samlat ett axplock av hur vi haft förmånen att hjälpa andra företag.
 <!--more-->
 
