@@ -1,14 +1,12 @@
 +++
 date = "2016-12-25T22:30:39+01:00"
-title = "Tjänsterna"
+title = "Såhär har vi hjälpt andra"
 groups = ["mainsections"]
 groups_weight = 1
 
 +++
 
-## Såhär har vi hjälpt andra.
-
-### Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi samlat ett axplock av hur vi haft förmånen att hjälpa andra företag.
+## Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi samlat ett axplock av hur vi haft förmånen att hjälpa andra företag.
 
 ### Skandia
 Tillsamans med ledningsgruppen för marknadsavdelningen kickstartade vi deras nya agila arbetsätt genom att:
