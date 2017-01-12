@@ -7,9 +7,23 @@ groups_weight = 2
 +++
 
 ## Så här kan Lixor hjälpa dig.
-Vad ska du med en konsult om du kan göra själv? Ta med dig några av våra
-erfarenheter i ditt eget arbete.
+En small, medium eller large Lixor? Det väljer du här.
 <!--more-->
 
-### Nyttan lite annat
-Und so weiter...
+### Våra tjänster
+
+### Small Lixor
+Bjud in oss för en halvdag som kommer utveckla hur ni genomför era projekt.
+
+### Medium Lixor
+Ett program för ledningsgrupper som vill utveckla agil kompetensförståelse och
+beslutsförmåga.
+
+### Large Lixor
+Vår workshop som vi skräddarsyr för ditt företag. Have fun blowing your mind!
+
+### Custom Lixor
+Hyr in en av våra konsulter hands-on i ditt projekt om du vill ha kul, växa och
+se resultatr!
+
+
