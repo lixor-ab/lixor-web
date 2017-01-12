@@ -12,6 +12,7 @@ Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi saml
 
 ### Skandia
 Tillsamans med ledningsgruppen för marknadsavdelningen kickstartade vi deras nya agila arbetsätt genom att:
+
 * 12 veckors plan
 * gå från silotänk till grupptänk
 * workshops
@@ -20,6 +21,7 @@ Tillsamans med ledningsgruppen för marknadsavdelningen kickstartade vi deras ny
 Link: Wow det är precis det här jag är ute efter!
 
 ### Spotify
+
 * styra upp team
 * målstyrning över hela avdelning
 * coaching
