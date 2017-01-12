@@ -6,7 +6,7 @@ groups_weight = 4
 
 +++
 
-## Nyttan.
+## Så här kan Lixor hjälpa dig.
 Vad ska du med en konsult om du kan göra själv? Ta med dig några av våra
 erfarenheter i ditt eget arbete.
 <!--more-->
