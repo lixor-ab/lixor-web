@@ -1,12 +1,12 @@
 +++
 date = "2016-12-25T22:30:39+01:00"
-title = "Så här har vi hjälpt andra"
+title = "Så här har Lixor hjälpt andra"
 groups = ["mainsections"]
 groups_weight = 1
 
 +++
 
-## Så här har vi hjälpt andra.
+## Så här har Lixor hjälpt andra.
 Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi samlat ett axplock av hur vi haft förmånen att hjälpa andra företag.
 <!--more-->
 
