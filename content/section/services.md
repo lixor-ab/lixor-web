@@ -7,7 +7,7 @@ groups_weight = 1
 +++
 
 ## Kunder.
-Spotify, KLarna och Bonnier är några av våra kunder. Men det finns fler!
+Spotify, Klarna och Bonnier är några av våra kunder. Men det finns fler!
 <!--more-->
 
 ### Skandia
