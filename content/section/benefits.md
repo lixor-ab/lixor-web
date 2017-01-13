@@ -1,12 +1,12 @@
 +++
 date = "2016-12-25T22:30:39+01:00"
-title = "Så här kan Lixor hjälpa dig"
+title = "Erbjudande"
 groups = ["mainsections"]
 groups_weight = 2
 
 +++
 
-## Så här kan Lixor hjälpa dig.
+## Erbjudande.
 En small, medium eller large Lixor? Det väljer du här.
 <!--more-->
 
