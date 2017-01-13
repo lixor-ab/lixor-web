@@ -1,12 +1,12 @@
 +++
 date = "2016-12-25T22:30:39+01:00"
-title = "Vem och vad"
+title = "Team Lixor"
 groups = ["mainsections"]
 groups_weight = 4
 
 +++
 
-## Vem och vad.
+## Team Lixor.
 Hos Lixor får du rätt känsla och driv i projekten – kunskapen får du på köpet.
 Kolla in de som jobbar här.
 <!--more-->
