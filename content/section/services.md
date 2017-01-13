@@ -16,16 +16,13 @@ Tillsamans med ledningsgruppen för marknadsavdelningen kickstartade vi deras ny
 * 12 veckors plan
 * gå från silotänk till grupptänk
 * workshops
-* massa bara saker
 
 Link: Wow det är precis det här jag är ute efter!
 
 ### Spotify
 
-* styra upp team
 * målstyrning över hela avdelning
-* coaching
-* bryta upp och transformera dysfunktionella team
+* coaching one on one och i grupp
 * uppföljning och retros
 
 Link: låter som något vi behöver!
@@ -34,35 +31,25 @@ Link: låter som något vi behöver!
 Genom att gemensamt införa agil terminologi och metodike genomfördes projektet framgångsrikt och friktionsfritt. 
 
 * Implementerade ett standardiserat ramverk som kan appliceras både på löpande och kommande projekt
-* Review and establish project organization
-* Support managers
-* Coach product owners
-* Establish and communicate launch strategies
-* Identify risks, both technical and organizational.
-* Develop meeting structures.
-* Pushing the project forward
+* Utvecklade hållbara mötesstrukturer
+* Etablerade och kommunicerade lanseringsstrategier
 
 Link: Det är som att läsa min egen kravspec!
 
 ### Bonnier
+Tillsammans med utvecklingsteam tog vi fram 
 
-* Delivering reading experiences from the future!
-* Review and establish project organization
-* Support managers
-* Coach product owners
-* Establish and communicate launch strategies
-* Identify risks, both technical and organizational.
-* Develop meeting structures for steering groups and teams.
-* Pushing the project forward
+*
+
 
 Link: Ge mig ! Ge mig! Ge mig!
 
 ### Expressen
-In less than a year we/Expressen built an agile development department from 0 to 50 people with 7 cross functional teams. Many of them delivering daily to production- Lixor contributed by:
-
-* Facilitate change by 
-* Coaching the organisation
-* Product owner for the core team.
+På mindre än ett är byggde vi en agil utvecklingsavdelning med 0 till 50 anställda ich 7 tvärfuktionella team. Lixor bidrog till detta genom att:
+ 
+* Coacha organisationen
+* Produktägare för kärnteamet
+* talent management (hitta, rekrytera och behålla kollegor)
 
 Link: Min organisation står också inför en stor förändring
 
