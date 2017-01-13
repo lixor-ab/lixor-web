@@ -10,8 +10,6 @@ groups_weight = 2
 Small, Medium eller Mixor? Det väljer du här.
 <!--more-->
 
-### Våra tjänster
-
 ### Small
 En samskapande dag där vi kan:
 * Sitta ner tillsammans med er och arbeta kring något konkret tillsammans
