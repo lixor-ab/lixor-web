@@ -7,7 +7,7 @@ groups_weight = 1
 +++
 
 ## Case.
-Lite osäker på vad Lixor kan göra för dig. Look no further! Här har vi samlat ett axplock av hur vi haft förmånen att hjälpa andra företag.
+Nyfiken på hur Lixor har hjälpt andra? Look no further!
 <!--more-->
 
 ### Skandia
