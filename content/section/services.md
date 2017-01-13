@@ -1,13 +1,13 @@
 +++
 date = "2016-12-25T22:30:39+01:00"
-title = "Case"
+title = "Kunder"
 groups = ["mainsections"]
 groups_weight = 1
 
 +++
 
-## Case.
-Nyfiken på hur Lixor har hjälpt andra? Look no further!
+## Kunder.
+Spotify, KLarna och Bonnier är några av våra kunder. Men det finns fler!
 <!--more-->
 
 ### Skandia
