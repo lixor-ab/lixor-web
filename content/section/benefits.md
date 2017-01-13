@@ -13,15 +13,15 @@ Small, Medium eller Mixor? Det väljer du här.
 ### Våra tjänster
 
 ### Small
-Bjud in oss för en halvdag som kommer utveckla hur ni genomför era projekt.
+En samskapande dag där vi kan:
+* Sitta ner tillsammans med er och arbeta kring något konkret tillsammans
+* Workshops med upplevelsebaserat lärande.
 
 ### Medium
-Ett program för ledningsgrupper som vill utveckla agil kompetensförståelse och
-beslutsförmåga.
+Ett 12-veckorsprogram för agil transformation 
 
 ### Mixor
-Vår workshop som vi skräddarsyr för ditt företag. Have fun blowing your mind!
-Hyr in en av våra konsulter hands-on i ditt projekt om du vill ha kul, växa och
-se resultatr!
+Have fun blowing your mind! Ta in en eller flera av våra konsulter i din organisation om du vill ha kul, växa och
+se resultat!
 
 
