@@ -12,11 +12,12 @@ Small, Medium eller Mixor? Det väljer du här.
 
 ### Small
 En samskapande dag där vi kan:
+
 * Sitta ner tillsammans med er och arbeta kring något konkret tillsammans
 * Workshops med upplevelsebaserat lärande.
 
 ### Medium
-Ett 12-veckorsprogram för agil transformation 
+Ett 12-veckorsprogram för agil transformation
 
 ### Mixor
 Have fun blowing your mind! Ta in en eller flera av våra konsulter i din organisation om du vill ha kul, växa och
