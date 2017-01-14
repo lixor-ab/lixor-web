@@ -58,7 +58,8 @@ Edit away & it's livereloaded at http://localhost:1313 (listening on 0.0.0.0 so 
 
 
 ## Deploy
-Deploy (to github pages), happens via travis-ci.
+Deploy (to github pages), happens via travis-ci. Travis pushed the built files to master branch
+at git@github.com:lixor-ab/lixor-ab.github.io.git.
 
 Right now it can be accessed at: https://lixor-ab.github.io/.
 
