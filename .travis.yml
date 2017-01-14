@@ -18,7 +18,7 @@ branches:
 notifications:
   slack:
     template:
-      - "https://uliedberg.github.io/lixor-web/ update by %{author} %{result}\n"
+      - "https://lixor-ab.github.io/ update by %{author} %{result}\n"
       - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} in %{duration}\n"
       - "\"%{commit_subject}\""
     rooms:

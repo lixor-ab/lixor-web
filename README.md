@@ -1,6 +1,6 @@
 # Lixor web
 
-[![Build Status](https://travis-ci.org/uliedberg/lixor-web.svg?branch=master)](https://travis-ci.org/uliedberg/lixor-web)
+[![Build Status](https://travis-ci.org/lixor-ab/lixor-web.svg?branch=master)](https://travis-ci.org/lixor-ab/lixor-web)
 
 ## TODO
 * show Torfinn & Rut
@@ -60,6 +60,6 @@ Edit away & it's livereloaded at http://localhost:1313 (listening on 0.0.0.0 so 
 ## Deploy
 Deploy (to github pages), happens via travis-ci.
 
-Right now it can be accessed at: https://uliedberg.github.io/lixor-web.
+Right now it can be accessed at: https://lixor-ab.github.io/.
 
 

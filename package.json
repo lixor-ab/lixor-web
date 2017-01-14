@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uliedberg/lixor-web.git"
+    "url": "git@github.com:lixor-ab/lixor-web.git"
   },
   "keywords": [
     "Lixor",
@@ -23,9 +23,9 @@
   "author": "Ulf Liedberg, Torfinn Almers, Rut Andersson, Ylva Fredriksson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/uliedberg/lixor-web/issues"
+    "url": "https://github.com/lixor-ab/lixor-web/issues"
   },
-  "homepage": "https://github.com/uliedberg/lixor-web#readme",
+  "homepage": "https://github.com/lixor-ab/lixor-web",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-env": "^1.1.4",
