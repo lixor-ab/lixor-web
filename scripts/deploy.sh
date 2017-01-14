@@ -3,9 +3,11 @@ set -e # Exit with nonzero exit code if anything fails
 
 # adapted from: https://raw.githubusercontent.com/domenic/zones/master/deploy.sh
 # TODO: right now anything locally can be deployed...
+# TODO: clean up properly after move to separate dist repo
 
 SOURCE_BRANCH="master"
-TARGET_BRANCH="gh-pages"
+TARGET_REPO="git@github.com:lixor-ab/lixor-ab.github.io.git" # must be ssh
+TARGET_BRANCH="master"
 DIST_DIR="public"
 
 if [ -n "$TRAVIS_BUILD_ID" ]; then
@@ -30,13 +32,13 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
 fi
 
 # Save some useful information
-REPO=`git config remote.origin.url`
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+#REPO=`git config remote.origin.url`
+#SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
 # Clone the existing gh-pages for this repo into $DIST_DIR/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
-git clone $REPO $DIST_DIR
+git clone $TARGET_REPO $DIST_DIR
 cd $DIST_DIR
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
@@ -69,5 +71,5 @@ git add .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH
+git push $TARGET_REPO $TARGET_BRANCH
 
