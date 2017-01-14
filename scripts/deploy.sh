@@ -55,9 +55,12 @@ cd $DIST_DIR
 git config user.name "Travis CI"
 git config user.email "ulf@alfhild.io"
 
+# add to see new files in diff
+git add .
 # If there are no changes (e.g. this is a README update) then just bail.
-if [ -z "`git diff`" ] ; then
+if [ -z "`git diff --cached`" ] ; then
   echo "No changes to the generated site on this push; exiting."
+  git reset HEAD .
   exit 0
 fi
 
@@ -67,7 +70,6 @@ fi
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Now that we're all set up, we can push.
