@@ -1,13 +1,29 @@
 
+:root { /*375px;*/
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-size: 16px;
+  font-size: 1em; /*16px;*/ /* 16px standard */
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   line-height: 1.37;
+}
+
+/* all we do is crank up the base font since everything is rem */
+/* TODO: use vars somehow? */
+@media (min-width: 30em) and (max-width: 36em) {
+  html {
+   font-size: 1.25em;
+  }
+}
+@media (min-width: 36em) {
+  html {
+    font-size: 1.5em;
+  }
 }
 
 body {
@@ -39,7 +55,8 @@ header {
   position: absolute;
   top: 0;
   z-index: 1;
-  max-width: 375px;
+  max-width: 384px;
+  max-width: 24rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%)
@@ -50,7 +67,8 @@ header {
   display: none;
   position: absolute;
   top: 25%;
-  max-width: 375px;
+  max-width: 384px;
+  max-width: 24rem;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(2);
           transform: translateX(-50%) scale(2);
@@ -78,7 +96,8 @@ header {
 }
 /* just section then right :) */
 .section-container > * {
-  max-width: 375px;
+  max-width: 384px;
+  max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,7 +116,8 @@ footer {
   overflow: hidden;
 }
 footer > * {
-  max-width: 375px;
+  max-width: 384px;
+  max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -106,7 +126,8 @@ footer > * {
 .footer-graphics {
   position: absolute;
   top: 25%;
-  max-width: 375px;
+  max-width: 384px;
+  max-width: 24rem;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(2);
           transform: translateX(-50%) scale(2);
@@ -123,7 +144,8 @@ footer > * {
   padding: 1.5rem 1rem 1.5rem 2.5rem;
   position: relative;
   color: rgba(0, 0, 0, .7);
-  max-width: 375px;
+  max-width: 384px;
+  max-width: 24rem;
 }
 
 /* TODO: do something more explicit size-wise? */
