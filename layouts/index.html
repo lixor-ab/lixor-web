@@ -46,7 +46,7 @@
     </header>
 
     {{ range .Site.Taxonomies.groups.mainsections }}
-    <div class="section-container">
+    <div class="section-container {{ .Page.Params.cssclass }}">
       <div class="section">
         <div class="section-summary">
           {{ .Page.Summary  }}

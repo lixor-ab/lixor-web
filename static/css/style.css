@@ -88,6 +88,12 @@ header {
 .section-container.expanded {
   background: #7f4e99;
 }
+.section-container.expanded.customers {
+  background: #8720a2;
+}
+.section-container.expanded.team-lixor {
+  background: #b411de;
+}
 .section-container.expanded .section {
   color: rgba(255, 255, 255, .8);
 }

@@ -13,6 +13,11 @@
     --powder-blue: #b0d1f2;
     --light-eggplant: #7f4e99;
 
+    --violet: #b411de;
+    --light-eggplant: #7f4e99;
+    --fuchsia: #dd11de;
+    --purple: #8720a2;
+
     --logo-font: "Helvetica Neue";
 
     --max-width: 24rem; /*375px;*/
@@ -96,6 +101,12 @@ header {
 }
 .section-container.expanded {
   background: var(--light-eggplant);
+}
+.section-container.expanded.customers {
+  background: var(--purple);
+}
+.section-container.expanded.team-lixor {
+  background: var(--violet);
 }
 .section-container.expanded .section {
   color: rgba(255, 255, 255, 0.8);
