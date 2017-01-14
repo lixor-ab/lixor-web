@@ -55,7 +55,7 @@ cd $DIST_DIR
 git config user.name "Travis CI"
 git config user.email "ulf@alfhild.io"
 
-# add to see new files in diff
+# add to see new files in diff - this does not delete files though, fix!
 git add .
 # If there are no changes (e.g. this is a README update) then just bail.
 if [ -z "`git diff --cached`" ] ; then
