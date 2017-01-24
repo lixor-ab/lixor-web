@@ -14,7 +14,7 @@ Small, Medium eller Mixor? Det väljer du här.
 ### Small
 En samskapande dag där vi kan:
 
-* Sitta ner tillsammans med er och arbeta kring något konkret tillsammans
+* Sitta ner tillsammans med er och arbeta kring något konkret
 * Workshops med upplevelsebaserat lärande.
 
 [Den tar jag!](mailto:team@lixor.se)
