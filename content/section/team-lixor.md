@@ -8,7 +8,7 @@ groups_weight = 4
 +++
 
 ## Team Lixor.
-Hos Lixor får du rätt känsla och driv i projekten – kunskapen får du på köpet.
+Med Lixor får du rätt känsla och driv i projekten – kunskapen får du på köpet.
 Kolla in de som jobbar här.
 <!--more-->
 
@@ -22,7 +22,7 @@ Så mycket mer än VD, agile coach och projektledare. Startade Lixor 2014.
 “Hur gör vi det här 100 gånger bättre samtidigt som vi har kul”
 
 ### Rut Andersson
-Orädd effektmakare med projektledning och sociala medier som bread n butter.
+Orädd effektmakare med systembaserat ledarskap och sociala medier som bread n butter.
 
 * [070-877 97 56](tel:+46708779756)
 * [rut.anderson@lixor.se](mailto:rut.anderson@lixor.se)
@@ -31,7 +31,7 @@ Orädd effektmakare med projektledning och sociala medier som bread n butter.
 “För den som har en hammare är varje problem en spik”
 
 ### Torfinn Almers
-Tänkande och visualiserande designleder. Skriver den här svadan och håller tummarna.
+Tänkande och visualiserande designleder vars bidrag alltid förhöjer resultatet.
 
 * [070-765 94 64](tel:+46707659464)
 * [torfinn.almers@lixor.se](mailto:torfinn.almers@lixor.se)
