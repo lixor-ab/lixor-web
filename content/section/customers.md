@@ -21,7 +21,7 @@ Skandias marknadsavdelning stod inför en agil transformation. Så här kickstar
 [Wow det är precis det här jag är ute efter!](mailto:team@lixor.se)
 
 ### Spotify
-Spotify är en av Sveriges snabbst växande unga företag med en agil organisation som nått framgång genom att arbeta på ett agilt och prestigelöst sätt.Lixor hjälper Spotify med:
+Spotify är en av Sveriges snabbst växande unga företag med en agil organisation som nått framgång genom att arbeta på ett agilt och prestigelöst sätt. Lixor hjälper Spotify med:
 
 * Agil coachning.
 * Skapa tydlighet och mening genom att arbeta måldrivet med tydlig uppföljning.
