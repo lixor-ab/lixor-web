@@ -303,6 +303,8 @@ blockquote {
   color: inherit;
   padding: 0;
   text-decoration: none;
+  line-height: 40px;
+  line-height: 2rem;
 }
 
 .team-lixor a[href^="mailto:"]:before, .team-lixor a[href^="tel:"]:before {
