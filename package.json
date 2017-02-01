@@ -4,6 +4,7 @@
   "description": "Lixor web",
   "main": "src/index.js",
   "scripts": {
+    "dev": "run-p hugo-dev postcss-dev babel-dev",
     "hugo-dev": "hugo server -ws . --bind=0.0.0.0",
     "postcss-dev": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css -w",
     "babel-dev": "babel src/js -o static/js/index.js -w",
@@ -27,13 +28,13 @@
   },
   "homepage": "https://github.com/lixor-ab/lixor-web",
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-env": "^1.1.4",
-    "postcss": "^5.2.8",
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "npm-run-all": "^4.0.1",
+    "postcss": "^5.2.11",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
     "rimraf": "^2.5.4"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
