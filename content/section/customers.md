@@ -19,8 +19,9 @@ Skandias marknadsavdelning stod inför en agil transformation. Så här kickstar
 * Ta fram mätbara mål och en 12-veckorsplan tillsammans med ledningsgruppen.
 * Coacha o bolla med ledningsgruppen så att de kunde fortsätta driva processen själva.
 
-[Wow det är precis det här jag är ute efter!](mailto:team@lixor.se)
-
+{{% button %}}
+[Låter som något vi behöver!](mailto:team@lixor.se)
+{{% /button %}}
 
 {{% image src="media/logo/spotify.svg" class="customer-logo" %}}
 ### Spotify
@@ -31,8 +32,9 @@ Spotify är en av Sveriges snabbst växande unga företag med en agil organisati
 
 #### Se videon [Spotify Engineering Culture part 1 här](https://www.youtube.com/watch?v=Mpsn3WaI_4k)
 
+{{% button %}}
 [Låter som något vi behöver!](mailto:team@lixor.se)
-
+{{% /button %}}
 
 {{% image src="media/logo/klarna.svg" class="customer-logo" %}}
 ### Klarna
@@ -41,7 +43,9 @@ Klarna är ledande inom fintech och växer riktigt snabbt med bibehållen lönsa
 * Leverera Klarnas högst prioriterade projekt på tid och budget.
 * Lixors arbetssätt blev grunden för ett standardiserat sätt att jobba med projekt.
 
+{{% button %}}
 [Det är som att läsa min egen önskelista!](mailto:team@lixor.se)
+{{% /button %}}
 
 
 {{% image src="media/logo/bonnier.svg" class="customer-logo" %}}
@@ -52,7 +56,9 @@ Bonnier ville ta fram en ny digital produkt för barn med eböcker och ljudböck
 * Lean UX med användartester varje vecka.
 * Prototyper, agil plannering och många skratt.
 
+{{% button %}}
 [Ge mig ! Ge mig! Ge mig!](mailto:team@lixor.se)
+{{% /button %}}
 
 
 {{% image src="media/logo/expressen.svg" class="customer-logo" %}}
@@ -63,11 +69,11 @@ På mindre än ett år byggde vi en agil utvecklingsavdelning från 0 till 50 an
 * Hjälpa ledningsgruppen arbeta måldrivet med en 12-veckorsplan och täta uppföljningar.
 * Talent management (hitta, rekrytera och behålla kollegor).
 
+{{% button %}}
 [Min organisation står också inför en stor förändring!](mailto:team@lixor.se)
+{{% /button %}}
 
+{{% button %}}
 [Allt det där låter ju toppen men jag är fortfarande inte säker på hur Lixor kan hjälpa mig.](mailto:team@lixor.se)
-
-
-
-
+{{% /button %}}
 

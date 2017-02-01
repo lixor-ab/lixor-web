@@ -248,6 +248,26 @@ blockquote {
   margin: 3rem 1rem 1.5rem;
 }
 
+/* TODO: can this happen neater? */
+.customers .button {
+  text-align: center;
+}
+
+.customers a[href^="mailto:"] {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  padding: 0 0.5rem;
+  margin: 10px 0;
+  margin: 0.5rem 0;
+  background: #ffd48c;
+  color: #2e2929;
+  text-decoration: none;
+  border-radius: 0.4444rem;
+  line-height: 40px;
+  line-height: 2rem;
+}
+
 
 /* TODO: page margins needs to be a var! :) */
 /* TODO: this only looks good on a screen where the photo fills the entire width */
