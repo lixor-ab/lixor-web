@@ -1,5 +1,7 @@
 
-:root { /*375px;*/
+:root {
+
+    /* the new colors: TODO: fix var names :)  */ /*375px;*/
 }
 
 * {
@@ -7,7 +9,7 @@
 }
 
 html {
-  font-size: 1em; /*16px;*/ /* 16px standard */
+  font-size: 1.25em; /* 20px; */ /* 1em; */ /*16px;*/ /* 16px standard */
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   line-height: 1.37;
@@ -15,9 +17,10 @@ html {
 
 /* all we do is crank up the base font since everything is rem */
 /* TODO: use vars somehow? */
+/* TODO: revisit cut points when base now is 1.25em */
 @media (min-width: 30em) and (max-width: 36em) {
   html {
-   font-size: 1.25em;
+   font-size: 1.5em;
   }
 }
 @media (min-width: 36em) {
@@ -31,22 +34,24 @@ body {
   padding: 0;
 }
 
+/*
 a {
-  color: #ff4476;
+  color: var(--warm-pink);
 }
+*/
 
 li a {
-  margin: 4px 0;
+  margin: 5px 0;
   margin: 0.25rem 0;
   display: inline-block; /* TODO: good idea? */
 }
 
 header {
   margin: 0;
-  padding-top: 32px;
+  padding-top: 40px;
   padding-top: 2rem;
-  padding-bottom: 64px;
-  padding-bottom: 4rem;
+  padding-bottom: 40px;
+  padding-bottom: 2rem;
   background: #e5dac5;
   position: relative;
 }
@@ -55,8 +60,8 @@ header {
   position: absolute;
   top: 0;
   z-index: 1;
-  max-width: 384px;
-  max-width: 24rem;
+  max-width: 400px;
+  max-width: 20rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%)
@@ -67,8 +72,8 @@ header {
   display: none;
   position: absolute;
   top: 25%;
-  max-width: 384px;
-  max-width: 24rem;
+  max-width: 400px;
+  max-width: 20rem;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(2);
           transform: translateX(-50%) scale(2);
@@ -102,28 +107,28 @@ header {
 }
 /* just section then right :) */
 .section-container > * {
-  max-width: 384px;
-  max-width: 24rem;
+  max-width: 400px;
+  max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .section-container:last-of-type {
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   padding-bottom: 1.5rem;
 }
 
 footer {
-  background: #000000;
+  background: #2e2929;
   color: #ff4476;
-  padding: 48px 24px 64px;
+  padding: 60px 30px 80px;
   padding: 3rem 1.5rem 4rem;
   position: relative;
   overflow: hidden;
 }
 footer > * {
-  max-width: 384px;
-  max-width: 24rem;
+  max-width: 400px;
+  max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -132,8 +137,8 @@ footer > * {
 .footer-graphics {
   position: absolute;
   top: 25%;
-  max-width: 384px;
-  max-width: 24rem;
+  max-width: 400px;
+  max-width: 20rem;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(2);
           transform: translateX(-50%) scale(2);
@@ -146,45 +151,198 @@ footer > * {
 
 .section {
   margin: 0 auto;
-  padding: 24px 16px 24px 40px;
-  padding: 1.5rem 1rem 1.5rem 2.5rem;
+  padding: 30px;
+  padding: 1.5rem; /* 1.5rem 2.5rem 1.5rem 2.5rem; */
   position: relative;
   color: rgba(0, 0, 0, .7);
-  max-width: 384px;
-  max-width: 24rem;
+  max-width: 400px;
+  max-width: 20rem;
 }
 
 /* TODO: do something more explicit size-wise? */
-.section:before {
+.section_tmp_skip::before {
   position: absolute;
   content: "•";
   color: #ff4476;
   font-family: serif;
-  font-size: 80px;
+  font-size: 100px;
   font-size: 5rem;
-  left: 8px;
-  left: 0.5rem;
-  top: 28.8px;
+  left: 15px;
+  left: 0.75rem; /*0.5rem;*/
+  top: 36px;
   top: 1.8rem;
-  line-height: 24px;
+  line-height: 30px;
   line-height: 1.5rem; /* ugly */
+}
+
+
+/* TODO: fix svg arrows instead of character! */
+.section:before {
+  position: absolute;
+  left: 15px;
+  left: 0.75rem;
+  top: 34px;
+  top: 1.7rem;
+  width: 35px;
+  width: 1.75rem;
+  height: 35px;
+  height: 1.75rem;
+  background: #ff4476;
+  border-radius: 50%;
+  content: "↓"; /*"↓";*/
+  color: #2e2929;
+  text-align: center;
+  line-height: 35px;
+  line-height: 1.75rem; /* needed? */
+  font-size: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section-container.expanded .section:before {
+  content: "↑";
+  color: #ffffff;
+}
+
+.section img {
+  width: 100%;
+  position: relative;
+}
+
+.team-lixor .section img {
+  color: red;
+}
+
+.team-lixor ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 25px;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+
+.team-member {
+  padding-top: 20px;
+  padding-top: 1rem;
+}
+.team-member:first-of-type {
+  padding-top: 40px;
+  padding-top: 2rem;
+}
+
+/* TODO: has to figure out layout for this */
+/*
+.team-member:nth-of-type(n + 1) {
+  background: var(--services-small);
+}
+.team-member:nth-of-type(n + 2) {
+  background: var(--services-medium);
+}
+.team-member:nth-of-type(n + 3) {
+  background: var(--lixor-pink);
+}
+*/
+
+/* TODO: page margins needs to be a var! :) */
+/* TODO: this only looks good on a screen where the photo fills the entire width */
+.team-member-photo {
+  margin: 0 -30px;
+  margin: 0 -1.5rem;
+  position: relative;
+}
+
+.team-member-photo:after {
+  content: "";
+  position: absolute;
+  background-image: url("../media/icon/linkedin.svg");
+  width: 50px;
+  width: 2.5rem;
+  height: 50px;
+  height: 2.5rem;
+  bottom: 20px;
+  bottom: 1rem;
+  right: 20px;
+  right: 1rem;
+  background-clip: content-box;
+  background-size: contain;
+}
+
+.team-member-photo img {
+  display: block;
+}
+
+/* inherit for all a tags? */
+.team-lixor a {
+  color: inherit;
+  padding: 0;
+  text-decoration: none;
+}
+
+.team-lixor a[href^="mailto:"]:before, .team-lixor a[href^="tel:"]:before {
+  content: " ";
+  display: inline-block;
+  background-clip: content-box;
+  background-size: contain;
+  width: 30px;
+  width: 1.5rem;
+  height: 30px;
+  height: 1.5rem;
+  vertical-align: middle;
+  padding-right: 10px;
+  padding-right: .5rem;
+}
+
+.team-lixor a[href^="mailto:"]:before {
+  background-image: url("../media/icon/email.svg");
+}
+.team-lixor a[href^="tel:"]:before {
+  background-image: url("../media/icon/mobile.svg");
+}
+
+.linked-in-container {
+  position: relative;
+  display: inline-block;
+}
+.linked-in-container img {
+  display: block;
+}
+.linked-in-container:after {
+  /* TODO: color in css - for now do it in the svg itself */
+  content: "";
+  position: absolute;
+  background-image: url("../media/linkedin-with-circle.svg");
+  width: 40px;
+  width: 2rem;
+  height: 40px;
+  height: 2rem;
+  bottom: 10px;
+  bottom: 0.5rem;
+  right: 10px;
+  right: 0.5rem;
 }
 
 .section h2 {
   margin-top: 0; /* nasty fix for footer spacing */
   display: inline-block;
   font-weight: normal;
-  font-size: 32px;
-  font-size: 2rem;
-  margin-bottom: 12px;
+  font-size: 40px;
+  font-size: 2rem; /*1.6rem;*/
+  margin-bottom: 15px;
   margin-bottom: 0.75rem;
-  line-height: 32px;
+  line-height: 40px;
   line-height: 2rem;
 }
 
 .section h3 {
+  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: normal;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   margin-bottom: 0.25rem;
 }
 
@@ -196,18 +354,23 @@ footer > * {
   margin: 0;
 }
 .section p+p {
-  margin-top: 8px;
+  margin-top: 10px;
   margin-top: 0.5rem;
 }
 
+/* TODO: if we go down this path - add big dot here */
+.section .section-summary h2 {
+  padding-left: 30px;
+  padding-left: 1.5rem;
+}
 /* TODO: what character - and what to do in expanded section? */
 /* might as well do css circle + any arrow? */
-.section .section-summary p:last-of-type:after {
+.section .section-summary-tmp_removal p:last-of-type:after {
   content: "➜";
   color: #ff4476;
-  font-size: 20px;
+  font-size: 25px;
   font-size: 1.25rem;
-  line-height: 16px;
+  line-height: 20px;
   line-height: 1rem;
   vertical-align: middle; /* sub */
   font-family: sans-serif;
@@ -233,10 +396,10 @@ footer > * {
 
 footer .quote {
   font-family: 'Lora', serif;
-  font-size: 28px;
+  font-size: 35px;
   font-size: 1.75rem;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   margin-bottom: 1rem;
 }
 
@@ -250,10 +413,10 @@ footer .mail-container {
 }
 footer .highfive-mail {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 10px 20px;
   padding: 0.5rem 1rem;
   background: #ffd48c;
-  color: #000000;
+  color: #2e2929;
   text-decoration: none;
   border-radius: 0.5rem;
 }
@@ -264,23 +427,23 @@ footer .highfive-mail {
 
 /* TODO: sort out the logo :) */
 .logo {
-  color: #000000;
+  color: #2e2929;
   font-family: "Helvetica Neue";
   font-weight: 900;
   line-height: 0.9;
-  padding: 16px;
+  padding: 20px;
   padding: 1rem;
-  font-size: 72px;
+  font-size: 90px;
   font-size: 4.5rem;
   text-align: center;
 }
 .logo--footer {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 35px;
   font-size: 1.75rem;
-  margin-top: 64px;
+  margin-top: 80px;
   margin-top: 4rem;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   margin-bottom: 2rem;
 }
 .logo--normal {
@@ -291,7 +454,7 @@ footer .highfive-mail {
   display: inline-block;
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
-  margin-left: -17.6px;
+  margin-left: -22px;
   margin-left: -1.1rem;
 }
 

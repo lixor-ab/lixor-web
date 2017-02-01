@@ -18,9 +18,25 @@
     --fuchsia: #dd11de;
     --purple: #8720a2;
 
+    /* the new colors: TODO: fix var names :)  */
+    --lixor-violet: #b411de;
+    --lixor-pink: #ff4476;
+    --lixor-darkpurple: #7f4e99;
+    --lixor-fuchsia: #dd11de;
+    --lixor-purple: #8720a2;
+    --wheat: #ffd48c;
+    --text-dark: #685b4a;
+    --black: #2e2929;
+    --lixor-light-purple: #d77cff;
+    --bg-main: #e5dac5;
+    --services-medium: #ffa101;
+    --white: #ffffff;
+    --linkedin-blue: #0072ad;
+    --services-small: #a6b9da;
+
     --logo-font: "Helvetica Neue";
 
-    --max-width: 24rem; /*375px;*/
+    --max-width: 20rem; /*375px;*/
 }
 
 * {
@@ -28,7 +44,7 @@
 }
 
 html {
-  font-size: 1em; /*16px;*/ /* 16px standard */
+  font-size: 1.25em; /* 20px; */ /* 1em; */ /*16px;*/ /* 16px standard */
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   line-height: 1.37;
@@ -36,9 +52,10 @@ html {
 
 /* all we do is crank up the base font since everything is rem */
 /* TODO: use vars somehow? */
+/* TODO: revisit cut points when base now is 1.25em */
 @media (min-width: 30em) and (max-width: 36em) {
   html {
-   font-size: 1.25em;
+   font-size: 1.5em;
   }
 }
 @media (min-width: 36em) {
@@ -52,9 +69,11 @@ body {
   padding: 0;
 }
 
+/*
 a {
   color: var(--warm-pink);
 }
+*/
 
 li a {
   margin: 0.25rem 0;
@@ -64,7 +83,7 @@ li a {
 header {
   margin: 0;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   background: var(--beige);
   position: relative;
 }
@@ -154,34 +173,165 @@ footer > * {
 
 .section {
   margin: 0 auto;
-  padding: 1.5rem 1rem 1.5rem 2.5rem;
+  padding: 1.5rem; /* 1.5rem 2.5rem 1.5rem 2.5rem; */
   position: relative;
   color: rgba(0, 0, 0, 0.7);
   max-width: var(--max-width);
 }
 
 /* TODO: do something more explicit size-wise? */
-.section:before {
+.section_tmp_skip::before {
   position: absolute;
   content: "•";
   color: var(--warm-pink);
   font-family: serif;
   font-size: 5rem;
-  left: 0.5rem;
+  left: 0.75rem; /*0.5rem;*/
   top: 1.8rem;
   line-height: 1.5rem; /* ugly */
+}
+
+
+/* TODO: fix svg arrows instead of character! */
+.section:before {
+  position: absolute;
+  left: 0.75rem;
+  top: 1.7rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--warm-pink);
+  border-radius: 50%;
+  content: "↓"; /*"↓";*/
+  color: var(--black);
+  text-align: center;
+  line-height: 1.75rem; /* needed? */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section-container.expanded .section:before {
+  content: "↑";
+  color: var(--white);
+}
+
+.section img {
+  width: 100%;
+  position: relative;
+}
+
+.team-lixor .section img {
+  color: red;
+}
+
+.team-lixor ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+
+.team-member {
+  padding-top: 1rem;
+}
+.team-member:first-of-type {
+  padding-top: 2rem;
+}
+
+/* TODO: has to figure out layout for this */
+/*
+.team-member:nth-of-type(n + 1) {
+  background: var(--services-small);
+}
+.team-member:nth-of-type(n + 2) {
+  background: var(--services-medium);
+}
+.team-member:nth-of-type(n + 3) {
+  background: var(--lixor-pink);
+}
+*/
+
+/* TODO: page margins needs to be a var! :) */
+/* TODO: this only looks good on a screen where the photo fills the entire width */
+.team-member-photo {
+  margin: 0 -1.5rem;
+  position: relative;
+}
+
+.team-member-photo:after {
+  content: "";
+  position: absolute;
+  background-image: url("../media/icon/linkedin.svg");
+  width: 2.5rem;
+  height: 2.5rem;
+  bottom: 1rem;
+  right: 1rem;
+  background-clip: content-box;
+  background-size: contain;
+}
+
+.team-member-photo img {
+  display: block;
+}
+
+/* inherit for all a tags? */
+.team-lixor a {
+  color: inherit;
+  padding: 0;
+  text-decoration: none;
+}
+
+.team-lixor a[href^="mailto:"]:before, .team-lixor a[href^="tel:"]:before {
+  content: " ";
+  display: inline-block;
+  background-clip: content-box;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  padding-right: .5rem;
+}
+
+.team-lixor a[href^="mailto:"]:before {
+  background-image: url("../media/icon/email.svg");
+}
+.team-lixor a[href^="tel:"]:before {
+  background-image: url("../media/icon/mobile.svg");
+}
+
+.linked-in-container {
+  position: relative;
+  display: inline-block;
+}
+.linked-in-container img {
+  display: block;
+}
+.linked-in-container:after {
+  /* TODO: color in css - for now do it in the svg itself */
+  content: "";
+  position: absolute;
+  background-image: url("../media/linkedin-with-circle.svg");
+  width: 2rem;
+  height: 2rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 
 .section h2 {
   margin-top: 0; /* nasty fix for footer spacing */
   display: inline-block;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 2rem; /*1.6rem;*/
   margin-bottom: 0.75rem;
   line-height: 2rem;
 }
 
 .section h3 {
+  font-size: 1.1rem;
   font-weight: normal;
   margin-bottom: 0.25rem;
 }
@@ -197,9 +347,13 @@ footer > * {
   margin-top: 0.5rem;
 }
 
+/* TODO: if we go down this path - add big dot here */
+.section .section-summary h2 {
+  padding-left: 1.5rem;
+}
 /* TODO: what character - and what to do in expanded section? */
 /* might as well do css circle + any arrow? */
-.section .section-summary p:last-of-type:after {
+.section .section-summary-tmp_removal p:last-of-type:after {
   content: "➜";
   color: var(--warm-pink);
   font-size: 1.25rem;
