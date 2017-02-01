@@ -40,10 +40,8 @@ a {
 }
 */
 
-li a {
-  margin: 5px 0;
-  margin: 0.25rem 0;
-  display: inline-block; /* TODO: good idea? */
+a {
+  color: inherit;
 }
 
 header {
@@ -94,10 +92,10 @@ header {
   background: #7f4e99;
 }
 .section-container.expanded.customers {
-  background: #8720a2;
+  /*background: var(--purple);*/
 }
 .section-container.expanded.team-lixor {
-  background: #b411de;
+  /*background: var(--violet);*/
 }
 .section-container.expanded .section {
   color: rgba(255, 255, 255, .8);
@@ -204,14 +202,6 @@ footer > * {
   color: #ffffff;
 }
 
-.section img {
-  width: 100%;
-  position: relative;
-}
-
-.team-lixor .section img {
-  color: red;
-}
 
 .team-lixor ul {
   list-style-type: none;
@@ -248,6 +238,17 @@ blockquote {
 }
 */
 
+.image-container img {
+  display: block;
+  width: 100%;
+}
+
+.customers .image-container.customer-logo {
+  margin: 60px 20px 30px;
+  margin: 3rem 1rem 1.5rem;
+}
+
+
 /* TODO: page margins needs to be a var! :) */
 /* TODO: this only looks good on a screen where the photo fills the entire width */
 .team-member-photo {
@@ -274,6 +275,7 @@ blockquote {
 
 .team-member-photo img {
   display: block;
+  width: 100%;
 }
 
 /* inherit for all a tags? */
@@ -302,28 +304,6 @@ blockquote {
 }
 .team-lixor a[href^="tel:"]:before {
   background-image: url("../media/icon/mobile.svg");
-}
-
-.linked-in-container {
-  position: relative;
-  display: inline-block;
-}
-.linked-in-container img {
-  display: block;
-}
-.linked-in-container:after {
-  /* TODO: color in css - for now do it in the svg itself */
-  content: "";
-  position: absolute;
-  background-image: url("../media/linkedin-with-circle.svg");
-  width: 40px;
-  width: 2rem;
-  height: 40px;
-  height: 2rem;
-  bottom: 10px;
-  bottom: 0.5rem;
-  right: 10px;
-  right: 0.5rem;
 }
 
 .section h2 {
@@ -362,18 +342,6 @@ blockquote {
 .section .section-summary h2 {
   padding-left: 30px;
   padding-left: 1.5rem;
-}
-/* TODO: what character - and what to do in expanded section? */
-/* might as well do css circle + any arrow? */
-.section .section-summary-tmp_removal p:last-of-type:after {
-  content: "➜";
-  color: #ff4476;
-  font-size: 25px;
-  font-size: 1.25rem;
-  line-height: 20px;
-  line-height: 1rem;
-  vertical-align: middle; /* sub */
-  font-family: sans-serif;
 }
 
 .section-container.expanded .section .section-summary p:last-of-type:after {

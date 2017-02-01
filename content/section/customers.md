@@ -11,6 +11,7 @@ groups_weight = 1
 Spotify, Klarna och Bonnier är några av våra kunder. Men det finns fler!
 <!--more-->
 
+{{% image src="media/logo/skandia.svg" class="customer-logo customer-logo--skandia" %}}
 ### Skandia
 Skandias marknadsavdelning stod inför en agil transformation. Så här kickstartade vi deras nya agila arbetsätt:
 
@@ -20,6 +21,8 @@ Skandias marknadsavdelning stod inför en agil transformation. Så här kickstar
 
 [Wow det är precis det här jag är ute efter!](mailto:team@lixor.se)
 
+
+{{% image src="media/logo/spotify.svg" class="customer-logo" %}}
 ### Spotify
 Spotify är en av Sveriges snabbst växande unga företag med en agil organisation som nått framgång genom att arbeta på ett agilt och prestigelöst sätt. Lixor hjälper Spotify med:
 
@@ -30,7 +33,9 @@ Spotify är en av Sveriges snabbst växande unga företag med en agil organisati
 
 [Låter som något vi behöver!](mailto:team@lixor.se)
 
-### KLarna
+
+{{% image src="media/logo/klarna.svg" class="customer-logo" %}}
+### Klarna
 Klarna är ledande inom fintech och växer riktigt snabbt med bibehållen lönsamhet. Lixor har bidragit till detta genom att:
 
 * Leverera Klarnas högst prioriterade projekt på tid och budget.
@@ -38,6 +43,8 @@ Klarna är ledande inom fintech och växer riktigt snabbt med bibehållen lönsa
 
 [Det är som att läsa min egen önskelista!](mailto:team@lixor.se)
 
+
+{{% image src="media/logo/bonnier.svg" class="customer-logo" %}}
 ### Bonnier
 Bonnier ville ta fram en ny digital produkt för barn med eböcker och ljudböcker. Lixor gjorde detta genom att:
 
@@ -47,6 +54,8 @@ Bonnier ville ta fram en ny digital produkt för barn med eböcker och ljudböck
 
 [Ge mig ! Ge mig! Ge mig!](mailto:team@lixor.se)
 
+
+{{% image src="media/logo/expressen.svg" class="customer-logo" %}}
 ### Expressen
 På mindre än ett år byggde vi en agil utvecklingsavdelning från 0 till 50 anställda och 7 tvärfuktionella team. Lixor bidrog till detta genom att:
 
