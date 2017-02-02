@@ -194,12 +194,17 @@ footer > * {
   line-height: 1.5rem; /* ugly */
 }
 
+.section-summary h2 {
+  padding-left: 1.5rem;
+  position: relative;
+}
 
 /* TODO: fix svg arrows instead of character! */
-.section:before {
+.section-summary h2:before {
   position: absolute;
-  left: 0.75rem;
-  top: 1.7rem;
+  left: -0.75rem; /* 0.875rem really half but this feels better */
+  top: 0;  bottom: 0;
+  margin: auto;
   width: 1.75rem;
   height: 1.75rem;
   background: var(--warm-pink);
@@ -212,7 +217,7 @@ footer > * {
   font-weight: bold;
 }
 
-.section-container.expanded .section:before {
+.section-container.expanded .section-summary h2:before {
   content: "↑";
   color: var(--white);
 }
@@ -353,11 +358,6 @@ blockquote {
 }
 .section p+p {
   margin-top: 0.5rem;
-}
-
-/* TODO: if we go down this path - add big dot here */
-.section .section-summary h2 {
-  padding-left: 1.5rem;
 }
 
 .section-container.expanded .section .section-summary p:last-of-type:after {
