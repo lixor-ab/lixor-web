@@ -18,6 +18,9 @@
    * maybe, just maybe, we should wait for some analytics data ;)
 * add article / blog post template
 * add way to navigate main -> post
+* add drop down function on arrows
+* change picture of Rut
+* Remove quote in footer
 
 
 ## Design prototype by Torfin
