@@ -30,7 +30,7 @@ Spotify är en av Sveriges snabbst växande unga företag med en agil organisati
 * Agil coachning.
 * Skapa tydlighet och mening genom att arbeta måldrivet med tydlig uppföljning.
 
-#### Se videon [Spotify Engineering Culture part 1 här](https://www.youtube.com/watch?v=Mpsn3WaI_4k)
+Se videon [Spotify Engineering Culture part 1 här](https://www.youtube.com/watch?v=Mpsn3WaI_4k)
 
 {{% button %}}
 [Låter som något vi behöver!](mailto:team@lixor.se)
