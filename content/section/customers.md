@@ -20,7 +20,7 @@ Skandias marknadsavdelning stod inför en agil transformation. Så här kickstar
 * Coacha o bolla med ledningsgruppen så att de kunde fortsätta driva processen själva.
 
 {{% button %}}
-[Låter som något vi behöver!](mailto:team@lixor.se)
+[Jag vill veta mer!](mailto:team@lixor.se)
 {{% /button %}}
 
 {{% image src="media/logo/spotify.svg" class="customer-logo" %}}
@@ -33,7 +33,7 @@ Spotify är en av Sveriges snabbst växande unga företag med en agil organisati
 Se videon [Spotify Engineering Culture part 1 här](https://www.youtube.com/watch?v=Mpsn3WaI_4k)
 
 {{% button %}}
-[Låter som något vi behöver!](mailto:team@lixor.se)
+[Jag vill veta mer!](mailto:team@lixor.se)
 {{% /button %}}
 
 {{% image src="media/logo/klarna.svg" class="customer-logo" %}}
@@ -44,7 +44,7 @@ Klarna är ledande inom fintech och växer riktigt snabbt med bibehållen lönsa
 * Lixors arbetssätt blev grunden för ett standardiserat sätt att jobba med projekt.
 
 {{% button %}}
-[Det är som att läsa min egen önskelista!](mailto:team@lixor.se)
+[Jag vill veta mer!](mailto:team@lixor.se)
 {{% /button %}}
 
 
@@ -57,7 +57,7 @@ Bonnier ville ta fram en ny digital produkt för barn med eböcker och ljudböck
 * Prototyper, agil plannering och många skratt.
 
 {{% button %}}
-[Ge mig ! Ge mig! Ge mig!](mailto:team@lixor.se)
+[Jag vill veta mer!](mailto:team@lixor.se)
 {{% /button %}}
 
 
@@ -70,10 +70,5 @@ På mindre än ett år byggde vi en agil utvecklingsavdelning från 0 till 50 an
 * Talent management (hitta, rekrytera och behålla kollegor).
 
 {{% button %}}
-[Min organisation står också inför en stor förändring!](mailto:team@lixor.se)
+[Jag vill veta mer!](mailto:team@lixor.se)
 {{% /button %}}
-
-{{% button %}}
-[Allt det där låter ju toppen men jag är fortfarande inte säker på hur Lixor kan hjälpa mig.](mailto:team@lixor.se)
-{{% /button %}}
-
