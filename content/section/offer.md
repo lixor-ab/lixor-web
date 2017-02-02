@@ -18,14 +18,14 @@ En samskapande dag där vi kan:
 * Workshops med upplevelsebaserat lärande.
 
 {{% button %}}
-[Den tar jag!](mailto:team@lixor.se)
+[Berätta mer!](mailto:team@lixor.se)
 {{% /button %}}
 
 ### Medium
 Ett 12-veckorsprogram för agil transformation
 
 {{% button %}}
-[Den tar jag!](mailto:team@lixor.se)
+[Berätta mer!](mailto:team@lixor.se)
 {{% /button %}}
 
 ### Mixor
@@ -33,6 +33,6 @@ Have fun blowing your mind! Ta in en eller flera av våra konsulter i din organi
 se resultat!
 
 {{% button %}}
-[Den tar jag!](mailto:team@lixor.se)
+[Berätta mer!](mailto:team@lixor.se)
 {{% /button %}}
 
