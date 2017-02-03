@@ -20,7 +20,7 @@ Skandias marknadsavdelning stod inför en agil transformation. Så här kickstar
 * Coacha o bolla med ledningsgruppen så att de kunde fortsätta driva processen själva.
 
 {{% button %}}
-[Jag vill veta mer!](mailto:team@lixor.se?{{ (querify "subject" "Jag vill veta mer!" "body" "Blir inte bättre än så här") | safeURL }})
+[Jag vill veta mer!](mailto:team@lixor.se?subject=Jag%20vill%20veta%20mer&body=Blir%20inte%20b%C3%A4ttre%20%C3%A4n%20s%C3%A5%20h%C3%A4r)
 {{% /button %}}
 
 {{% image src="media/logo/spotify.svg" class="customer-logo" %}}
