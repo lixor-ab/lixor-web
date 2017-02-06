@@ -2,7 +2,7 @@
 date = "2017-02-04T20:11:12+01:00"
 title = "lisbeth"
 weight = 4
-cssclass = "team-member"
+name = "team-member"
 
 +++
 

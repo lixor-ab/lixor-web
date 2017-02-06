@@ -81,6 +81,9 @@ a {
 
 ul {
   padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0;
 }
 
 header {
@@ -111,41 +114,6 @@ header {
   z-index: 1;
 }
 
-/*
-{
-  background: var(--beige);
-  padding: 1rem 0;
-  color: rgba(0, 0, 0, 0.7);
-}
-*/
-.section-container {
-  background: var(--beige);
-}
-.section-container.expanded {
-  background: var(--light-eggplant);
-}
-.section-container.expanded.customers {
-  /*background: var(--purple);*/
-}
-.section-container.expanded.team-lixor {
-  /*background: var(--violet);*/
-}
-.section-container.expanded .section {
-  color: rgba(255, 255, 255, 0.8);
-}
-.section-container.expanded .section h3 {
-  color: var(--wheat);
-}
-/* just section then right :) */
-.section-container > * {
-  max-width: var(--max-width);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-container:last-of-type {
-  padding-bottom: 1.5rem;
-}
 
 footer {
   background: var(--black);
@@ -174,24 +142,48 @@ footer > * {
 
 }
 
+.main {
+  background: var(--beige);
+}
+.section.expanded {
+  background: var(--light-eggplant);
+  color: rgba(255, 255, 255, 0.8);
+}
+.section.expanded.section--customers {
+  /*background: var(--purple);*/
+}
+.section.expanded.section--team-lixor {
+  /*background: var(--violet);*/
+}
+.section.expanded h3 {
+  color: var(--wheat);
+}
+/* just section then right :) */
+/*.section-container > * {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+/*.section-container:last-of-type {
+  padding-bottom: 1.5rem;
+}*/
+
+
 .section {
   margin: 0 auto;
-  padding: 1.5rem; /* 1.5rem 2.5rem 1.5rem 2.5rem; */
+  padding: 1.5rem 0; /* 1.5rem 2.5rem 1.5rem 2.5rem; */
   position: relative;
   color: rgba(0, 0, 0, 0.7);
-  max-width: var(--max-width);
 }
 
-/* TODO: do something more explicit size-wise? */
-.section_tmp_skip::before {
-  position: absolute;
-  content: "•";
-  color: var(--warm-pink);
-  font-family: serif;
-  font-size: 5rem;
-  left: 0.75rem; /*0.5rem;*/
-  top: 1.8rem;
-  line-height: 1.5rem; /* ugly */
+.section:last-of-type {
+  padding-bottom: 3rem;
+}
+
+/* content will have to sort this out :) */
+.section.expanded {
+  padding-bottom: 0;
 }
 
 .section-summary h2 {
@@ -217,15 +209,31 @@ footer > * {
   font-weight: bold;
 }
 
-.section-container.expanded .section-summary h2:before {
+.section.expanded .section-summary h2:before {
   content: "↑";
   color: var(--white);
 }
 
 
-.team-lixor ul {
+.section .section-summary,
+.section .section-body .section-body-part-inner {
+  max-width: var(--max-width);
+  margin: 0 auto; /* this won't fly :) */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section.expanded .section-summary {
+  margin-bottom: 1.5rem;
+}
+/*.section-summary {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}*/
+
+.section--team-lixor ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 blockquote {
@@ -234,33 +242,37 @@ blockquote {
   font-style: italic;
 }
 
-
-.team-member {
-  padding-top: 1rem;
+.section--team-lixor .section-summary {
+  /*padding-bottom: 1.5rem;
+  padding-top: 1.5rem;*/
 }
-.team-member:first-of-type {
+
+/*.section-body-part--team-member:first-of-type {
   padding-top: 2rem;
+}*/
+
+.section-body-part--team-member {
+  padding-bottom: 1rem;
 }
 
 /* TODO: has to figure out layout for this */
-/*
-.team-member:nth-of-type(n + 1) {
+.section-body-part--team-member:nth-of-type(3n + 1) {
   background: var(--services-small);
 }
-.team-member:nth-of-type(n + 2) {
+.section-body-part--team-member:nth-of-type(3n + 2) {
   background: var(--services-medium);
 }
-.team-member:nth-of-type(n + 3) {
+.section-body-part--team-member:nth-of-type(3n + 3) {
   background: var(--lixor-pink);
 }
-*/
+
 
 .image-container img {
   display: block;
   width: 100%;
 }
 
-.customers .image-container.customer-logo {
+.section--customers .image-container.customer-logo {
   margin: 3rem 1rem 1.5rem;
 }
 
@@ -270,8 +282,8 @@ blockquote {
   text-align: center;
 }
 
-.customers a[href^="mailto:"],
-.offer a[href^="mailto:"] {
+.section--customers a[href^="mailto:"],
+.section--offer a[href^="mailto:"] {
   position: relative;
   display: inline-block;
   padding: 0 0.5rem;
@@ -309,14 +321,14 @@ blockquote {
 }
 
 /* inherit for all a tags? */
-.team-lixor a {
+.section--team-lixor a {
   color: inherit;
   padding: 0;
   text-decoration: none;
   line-height: 2rem;
 }
 
-.team-lixor a[href^="mailto:"]:before, .team-lixor a[href^="tel:"]:before {
+.section--team-lixor a[href^="mailto:"]:before, .section--team-lixor a[href^="tel:"]:before {
   content: " ";
   display: inline-block;
   background-clip: content-box;
@@ -327,10 +339,10 @@ blockquote {
   padding-right: .5rem;
 }
 
-.team-lixor a[href^="mailto:"]:before {
+.section--team-lixor a[href^="mailto:"]:before {
   background-image: url("../media/icon/email.svg");
 }
-.team-lixor a[href^="tel:"]:before {
+.section--team-lixor a[href^="tel:"]:before {
   background-image: url("../media/icon/mobile.svg");
 }
 
@@ -360,15 +372,15 @@ blockquote {
   margin-top: 0.5rem;
 }
 
-.section-container.expanded .section .section-summary p:last-of-type:after {
+/*.section.expanded .section-summary p:last-of-type:after {
   display: none;
-}
+}*/
 
 .section .section-body {
   display: none;
 }
 
-.section-container.expanded .section-body {
+.section.expanded .section-body {
   display: block;
 }
 

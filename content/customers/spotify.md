@@ -1,6 +1,7 @@
 +++
 date = "2017-02-04T20:11:12+01:00"
 title = "spotify"
+name = "spotify"
 weight = 2
 
 +++

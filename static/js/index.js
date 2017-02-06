@@ -9,6 +9,6 @@
   });
 
   function onToggle(e) {
-    e.currentTarget.parentNode.parentNode.classList.toggle('expanded');
+    e.currentTarget.parentNode.classList.toggle('expanded');
   }
 })();

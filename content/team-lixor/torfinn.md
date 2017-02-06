@@ -2,7 +2,7 @@
 date = "2017-02-04T20:11:12+01:00"
 title = "torfinn"
 weight = 3
-cssclass = "team-member"
+name = "team-member"
 
 +++
 
