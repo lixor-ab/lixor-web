@@ -253,16 +253,64 @@ blockquote {
 }
 
 /* TODO: has to figure out layout for this */
+.section--offer .section-body-part:nth-of-type(3n + 1),
 .section-body-part--team-member:nth-of-type(3n + 1) {
   background: #a6b9da;
 }
+.section--offer .section-body-part:nth-of-type(3n + 2),
 .section-body-part--team-member:nth-of-type(3n + 2) {
   background: #ffa101;
 }
+.section--offer .section-body-part:nth-of-type(3n + 3),
 .section-body-part--team-member:nth-of-type(3n + 3) {
   background: #ff4476;
 }
 
+.section--offer .section-body-part {
+  padding-top: 20px;
+  padding-top: 1rem;
+  padding-bottom: 30px;
+  padding-bottom: 1.5rem;
+}
+
+.section--offer .section-body-part {
+  padding-top: 0;
+}
+
+
+/* TODO: quick POC hack */
+.section--offer .section-body-part-inner:before {
+  font-size: 240px;
+  font-size: 12rem;
+  padding-left: -100px;
+  padding-left: -5rem;
+  max-width: 400px;
+  max-width: 20rem;
+  overflow: hidden;
+  display: block;
+  line-height: 160px;
+  line-height: 8rem;
+  font-family: "Arial-BoldMT";
+  color: #ffffff;
+}
+
+.section-body-part--small .section-body-part-inner:before {
+  content: "Small";
+  text-indent: -40px;
+  text-indent: -2rem;
+}
+
+.section-body-part--medium .section-body-part-inner:before {
+  content: "Medium";
+  text-indent: -80px;
+  text-indent: -4rem;
+}
+
+.section-body-part--mixor .section-body-part-inner:before {
+  content: "Mixor";
+  text-indent: -100px;
+  text-indent: -5rem;
+}
 
 .image-container img {
   display: block;
