@@ -45,24 +45,30 @@
       </div>
     </header>
 
-    {{ range .Site.Taxonomies.groups.mainsections }}
-    <div class="section-container {{ .Page.Params.cssclass }}">
-      <div class="section">
-        <div class="section-summary">
-          {{ .Page.Summary  }}
-        </div>
-
-        <div class="section-body">
-          {{ $body := replace .Page.Content .Page.Summary "" }}
-          {{ $body | safeHTML }}
+    <main>
+      {{ range .Site.Taxonomies.groups.mainsections }}
+      <div class="section-container">
+        <div class="section {{ .Page.Section }}">
+          <div class="section-summary">
+            {{ .Page.Content }}
+          </div>
+          <div class="section-body">
+            {{ range where $.Site.Pages "Section" .Page.Section }}
+            {{ $isIndex := in .Params.groups "mainsections" }}
+            {{ if not $isIndex }}
+              <div class="section-body-part {{ .Params.cssclass }}">
+                {{ .Content }}
+              </div>
+            {{ end }}
+            {{ end }}
+          </div>
         </div>
       </div>
-    </div>
-    {{ end }}
+      {{ end }}
+    </main>
 
     {{ partial "footer.html" . }}
 
     <script src="js/index.js"></script>
   </body>
 </html>
-
