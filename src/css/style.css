@@ -284,30 +284,31 @@ blockquote {
 
 
 /* TODO: quick POC hack */
-.section--offer .section-body-part-inner:before {
-  font-size: 12rem;
+.section--offer .section-body-part:before {
+  font-size: 17rem;
   padding-left: -5rem;
   max-width: var(--max-width);
+  margin: 0 auto;
   overflow: hidden;
   display: block;
-  line-height: 8rem;
+  line-height: 10rem;
   font-family: "Arial-BoldMT";
   color: var(--white);
 }
 
-.section-body-part--small .section-body-part-inner:before {
+.section-body-part--small:before {
   content: "Small";
   text-indent: -2rem;
 }
 
-.section-body-part--medium .section-body-part-inner:before {
+.section-body-part--medium:before {
   content: "Medium";
-  text-indent: -4rem;
+  text-indent: -8rem;
 }
 
-.section-body-part--mixor .section-body-part-inner:before {
+.section-body-part--mixor:before {
   content: "Mixor";
-  text-indent: -5rem;
+  text-indent: -12rem;
 }
 
 .image-container img {
