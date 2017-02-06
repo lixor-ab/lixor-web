@@ -247,6 +247,11 @@ blockquote {
   padding-bottom: 1rem;
 }
 
+.section-body-part:last-of-type {
+  padding-bottom: 30px;
+  padding-bottom: 1.5rem;
+}
+
 /* TODO: has to figure out layout for this */
 .section-body-part--team-member:nth-of-type(3n + 1) {
   background: #a6b9da;
@@ -265,15 +270,19 @@ blockquote {
 }
 
 .section--customers .image-container.customer-logo {
-  margin: 60px 20px 30px;
-  margin: 3rem 1rem 1.5rem;
+  margin: 40px 20px 20px;
+  margin: 2rem 1rem 1rem;
 }
 
 /* TODO: can this happen neater? */
 .button {
-  margin-top: 15px;
-  margin-top: 0.75rem;
+  margin-top: 10px;
+  margin-top: 0.5rem;
   text-align: center;
+}
+/* TODO: ugly hack - not even consistent with other content */
+ul + .button {
+  margin-top: 0;
 }
 
 .section--customers a[href^="mailto:"],
@@ -370,6 +379,8 @@ blockquote {
   font-weight: normal;
   margin-bottom: 5px;
   margin-bottom: 0.25rem;
+  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 .section h2+p {
