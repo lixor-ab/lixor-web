@@ -1,26 +1,35 @@
 <html>
-    <head></head>
-    <body>
-        <form>
-            <input type="text" name="input">
-            <input type="submit" value="encode">
-        </form>
+  <head>
+    <style>
+      body { line-height: 2em; }
+      output { display: block; }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>email: <input type="email" name="email"></label>
+      <label>subject: <input type="text" name="subject"></label>
+      <label>body: <input type="text" name="body"></label>
+      <input type="submit" value="encode">
+      <output name="result">
+    </form>
 
-        <span class="output">
+    <script>
+    'use strict';
 
-<script>
-'use strict';
+    (function () {
+      document.querySelector('form').addEventListener('submit', onSubmit, false);
 
-(function () {
-
-  document.querySelector('form').addEventListener('submit', onSubmit, false);
-  const output = document.querySelector('.output');
-
-  function onSubmit(e) {
-      e.preventDefault();
-      output.innerHTML = encodeURIComponent(e.currentTarget.children.input.value);
-  }
-})();
-</script>
-    </body>
+      function onSubmit(e) {
+        e.preventDefault();
+        const data = new Map(new FormData(e.currentTarget).entries());
+        const params =
+          (data.get('subject') ? [`subject=${encodeURIComponent(data.get('subject'))}`] : []).concat(
+          data.get('body') ? [`body=${encodeURIComponent(data.get('body'))}`] : [])
+        const mailto = `mailto:${data.get('email')}` + (params.length ? `?${params.join('&')}` : '');
+        e.currentTarget.children.result.innerHTML = `${mailto} <a href="${mailto}">test</a>`;
+        }
+      })();
+    </script>
+  </body>
 </html>
