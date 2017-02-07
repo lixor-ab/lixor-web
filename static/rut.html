@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <form>
+            <input type="text" name="input">
+            <input type="submit" value="encode">
+        </form>
+
+        <span class="output">
+
+<script>
+'use strict';
+
+(function () {
+
+  document.querySelector('form').addEventListener('submit', onSubmit, false);
+  const output = document.querySelector('.output');
+
+  function onSubmit(e) {
+      e.preventDefault();
+      output.innerHTML = encodeURIComponent(e.currentTarget.children.input.value);
+  }
+})();
+</script>
+    </body>
+</html>
