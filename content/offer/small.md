@@ -7,9 +7,9 @@ weight = 1
 +++
 
 ### Small
-En samskapande dag där vi kan:
+En heldag där vi:
 
-* Sitta ner tillsammans med er och arbeta kring något konkret
+* Tillsammans skapar en roadmap utifrån ett konkret case
 * Workshops med upplevelsebaserat lärande.
 
 {{% button %}}
