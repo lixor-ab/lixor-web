@@ -45,13 +45,10 @@ a {
 }
 
 ul {
-  padding-left: 30px;
-  padding-left: 1.5rem;
-  padding-bottom: 20px;
-  padding-bottom: 1rem;
-  padding-top: 20px;
-  padding-top: 1rem;
-  margin: 0;
+  padding: 0 0 0 30px;
+  padding: 0 0 0 1.5rem;
+  margin: 20px 0;
+  margin: 1rem 0;
 }
 
 header {
@@ -291,7 +288,7 @@ blockquote {
   display: block;
   line-height: 200px;
   line-height: 10rem;
-  font-family: "Arial-BoldMT";
+  font-family: "Arial-BoldMT", Arial, sans-serif;
   color: #ffffff;
 }
 
@@ -318,20 +315,25 @@ blockquote {
   width: 100%;
 }
 
-.section--customers .image-container.customer-logo {
-  margin: 40px 20px 20px;
-  margin: 2rem 1rem 1rem;
+
+.section--customers .section-body-part {
+  padding: 10px 0;
+  padding: 0.5rem 0;
 }
 
-/* TODO: can this happen neater? */
-.button {
-  margin-top: 10px;
-  margin-top: 0.5rem;
-  text-align: center;
+
+.section--customers .section-body-part:first-of-type {
+  padding-top: 20px;
+  padding-top: 1rem;
 }
-/* TODO: ugly hack - not even consistent with other content */
-ul + .button {
-  margin-top: 0;
+.section--customers .section-body-part:last-of-type {
+  padding-bottom: 30px;
+  padding-bottom: 1.5rem;
+}
+
+.section--customers .image-container.customer-logo {
+  margin: 10px 20px 20px;
+  margin: 0.5rem 1rem 1rem;
 }
 
 
@@ -433,21 +435,29 @@ ul + .button {
   margin-top: 1rem;
 }
 
-.section h2+p {
+.section h2 + p {
+  margin-top: 0;
+}
+
+.section h3 + p {
   margin-top: 0;
 }
 
 .section p {
+  margin: 20px 0;
+  margin: 1rem 0;
+}
+
+/*.section p {
   margin: 0;
 }
 .section p+p {
-  margin-top: 10px;
   margin-top: 0.5rem;
-}
-
-/*.section.expanded .section-summary p:last-of-type:after {
-  display: none;
 }*/
+
+.section-summary p:last-of-type {
+  margin-bottom: 0;
+}
 
 .section .section-body {
   display: none;
