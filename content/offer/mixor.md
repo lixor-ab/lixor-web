@@ -7,7 +7,7 @@ weight = 3
 +++
 
 ### Mixor
-Have fun blowing your mind! Ta in en eller flera av våra konsulter i din organisation om du vill ha kul, växa och
+Ta in en eller flera av våra konsulter i din organisation om du vill ha växa och
 se resultat!
 
 {{% button %}}
