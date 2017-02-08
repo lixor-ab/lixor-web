@@ -333,9 +333,9 @@ ul + .button {
 .section--customers a[href^="mailto:"],
 .section--offer a[href^="mailto:"] {
   position: relative;
-  display: inline-block;
+  display: table; /* no parent available... */
   padding: 0 0.5rem;
-  margin: 0.5rem 0;
+  margin: 1.5rem auto; /* 0.5rem 0; */
   background: var(--wheat);
   color: var(--black);
   text-decoration: none;

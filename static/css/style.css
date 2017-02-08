@@ -334,14 +334,15 @@ ul + .button {
   margin-top: 0;
 }
 
+
 .section--customers a[href^="mailto:"],
 .section--offer a[href^="mailto:"] {
   position: relative;
-  display: inline-block;
+  display: table; /* no parent available... */
   padding: 0 10px;
   padding: 0 0.5rem;
-  margin: 10px 0;
-  margin: 0.5rem 0;
+  margin: 30px auto;
+  margin: 1.5rem auto; /* 0.5rem 0; */
   background: #ffd48c;
   color: #2e2929;
   text-decoration: none;
