@@ -13,6 +13,7 @@ deploy:
   bucket: www.lixor.se
   skip_cleanup: true
   region: eu-central-1
+  local_dir: public
 env:
   global:
   - ENCRYPTION_LABEL: a46ce31c1990
