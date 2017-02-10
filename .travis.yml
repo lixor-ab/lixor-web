@@ -1,26 +1,35 @@
 sudo: false
 before_install:
-  - wget --no-clobber https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz
-  - tar -xvf hugo_0.18.1_Linux-64bit.tar.gz
-  - ln -s $PWD/hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 $PWD/hugo_0.18.1_linux_amd64/hugo
-  - export PATH=$PATH:$PWD/hugo_0.18.1_linux_amd64/
+- wget --no-clobber https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz
+- tar -xvf hugo_0.18.1_Linux-64bit.tar.gz
+- ln -s $PWD/hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 $PWD/hugo_0.18.1_linux_amd64/hugo
+- export PATH=$PATH:$PWD/hugo_0.18.1_linux_amd64/
 script: bash ./scripts/deploy.sh
+deploy:
+  provider: s3
+  access_key_id: AKIAJAZIR27NVGULJ3NQ
+  secret_access_key:
+    secure: pQoA1RGVxT5WJW2pQFfnsi1a96i4yWLGkXndTg5h/+Uss35VeOwOunPPUtGVqEpbqWEGwQrENWt/Nqk8MtKgGD6PRFDqLyjLYUT8UIW8lO8nSM/FRq6ksk6znF1w5QIl3s3ozZce522iVmVIQgn9OYeVBZV85olaxqlnPC7DUnnDvlH9xS3P4GmUZ02d3TWYkzARrpoKv+xGP8WcjNQsG2B9kG7PqHdKkLjHrdmLHBP4vmyGZQIk0S7cSBHzk5kP61K/Yt8Iv5U+gVKaCRAhlSlnoqzWmkDX+abH+eQQhGfm9nXfuX9Bi/BwbL8o69Ce6chNj4ftOeT3gLUeGUPYuPzhAsGKWqPNuvAqkKfwRkx+mwZP8HaIL/Ak86IOWqZO2aAK0CjCjJPtowCHjFh+Gep3XRiCZXolE+1l1rZdtex3H2kc2EKYNkJoe4npmpnz9OpMJ5nJpCSSGJjSK7V9mCWOPd6kDgh3o22wfxeQsCqNuKYuYmtIR0QnesBO2FXOdBB8q6mNyioTLZdOC8nyUFY5ohRjmvGMT2eUKj4EsSjSm1qhLEvM8zM4fNazMtdvDRsvD2sMkN9/cILyw3DcxnDrAYYp0Z8a7IYttIfhrIUhiIq036aKGUiaLRt3vRVrpBFC2rF6J+YhA+9vbncc8sK/gd7XKK4Pd82cPPk/gWg=
+  bucket: www.lixor.se.s3.amazonaws.com
+  skip_cleanup: true
+  region: eu-central-1
 env:
   global:
-    - ENCRYPTION_LABEL: a46ce31c1990
+  - ENCRYPTION_LABEL: a46ce31c1990
 language: node_js
 node_js:
-  - stable
+- stable
 cache: yarn
 branches:
   except:
-    - gh-pages
+  - gh-pages
 notifications:
   slack:
     template:
-      - "https://lixor-ab.github.io/ update by %{author} %{result}\n"
-      - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} in %{duration}\n"
-      - "\"%{commit_subject}\""
+    - |
+      https://lixor-ab.github.io/ update by %{author} %{result}
+    - |
+      Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} in %{duration}
+    - '"%{commit_subject}"'
     rooms:
       secure: ayWRh1c8PWAUQe4WGxC9PI//7h8sBeKC8teb5f4JrFBfP6UT9NA8lYB0wlVeH/K736FyKPQxY4KDNbrbodmn6BUf7eVZdYHk+pdE5sqk4ZtrYg+oIwy8EJ96sM/KuO5jTJpE0/wdLg77Wepykbk9HR0BwIKjVPGe/xRW0SodrTd1gADkw7f+ts3o/gdeDvnkwX5r/6RQ0HtgQmxWRYrSGUlrqNkmLqPCW4n9dRxzwQIzFQHgKky8aYhpGascrWl26yJNUS5M0uVojytQZDq/d/SGqnID1hV5WT9P4I/ijpxWXxglJOz/KyZUBB6GaixxDUNAfbjP3hNJiI5p9g3W7L9n2KvsUn/k4lxRz46gJlirG4lB9kpX4ngc+fyj0xhCVmAaMf09zUQKewYH1yRzh99MxYbh0eZk/yfghsYATBCnqyc3WcvBXVHZF+jqL1+J/XwSYbDiDPYPcn7LAXQm+/lV71PKm1o67qE6VYcYr8dpHMEAr8SOIn/1pAv3h4ipPSiJfWMreh3QrapPttOaePkCKOB8sfwDac/8UMwwWuaJzAZA8KJZO6M5TrZNoRfV5p1ipf19oGpXwTwJKmflgm6/uKagDtlqfmnlxQJdKwfGwd5vk8YO+lk3MVSvu0rpk0ABnhrGtjlSxSepxxxu++tORW2+0JLf1ZB8ZWgR/aA=
-
