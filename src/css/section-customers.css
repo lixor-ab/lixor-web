@@ -1,0 +1,29 @@
+@import "vars.css";
+
+.section--customers .section-body-part {
+  padding: 0.5rem 0;
+}
+
+.section--customers .section-body-part:first-of-type {
+  padding-top: 1rem;
+}
+.section--customers .section-body-part:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+.section--customers .image-container.customer-logo {
+  margin: 0.5rem 1rem 1rem;
+}
+
+.section--customers a[href^="mailto:"],
+.section--offer a[href^="mailto:"] {
+  position: relative;
+  display: table; /* no parent available... */
+  padding: 0 0.5rem;
+  margin: 1.5rem auto; /* 0.5rem 0; */
+  background: var(--wheat);
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 0.4444rem;
+  line-height: 2rem;
+}

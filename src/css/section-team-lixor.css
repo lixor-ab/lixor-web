@@ -1,0 +1,41 @@
+@import "vars.css";
+
+/* TODO: don't hack all the things */
+.section--team-lixor li + li {
+  margin-top: 0;
+}
+
+.section--team-lixor ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* inherit for all a tags? */
+.section--team-lixor a {
+  color: inherit;
+  padding: 0;
+  text-decoration: none;
+  line-height: 2rem;
+}
+
+.section--team-lixor a[href^="mailto:"]:before, .section--team-lixor a[href^="tel:"]:before {
+  content: " ";
+  display: inline-block;
+  background-clip: content-box;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  padding-right: .5rem;
+}
+
+.section--team-lixor a[href^="mailto:"]:before {
+  background-image: url("../media/icon/email.svg");
+}
+.section--team-lixor a[href^="tel:"]:before {
+  background-image: url("../media/icon/mobile.svg");
+}
+
+.section-body-part--team-member {
+  padding-bottom: 1rem;
+}

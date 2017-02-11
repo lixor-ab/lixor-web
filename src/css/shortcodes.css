@@ -1,0 +1,29 @@
+.image-container img {
+  display: block;
+  width: 100%;
+}
+
+/* TODO: page margins needs to be a var! :) */
+/* TODO: this only looks good on a screen where the photo fills the entire width ? */
+.team-member-photo {
+  margin: 0 -1.5rem;
+  position: relative;
+  display: block;
+}
+
+.team-member-photo:after {
+  content: "";
+  position: absolute;
+  background-image: url("../media/icon/linkedin.svg");
+  width: 2.5rem;
+  height: 2.5rem;
+  bottom: 1rem;
+  right: 1rem;
+  background-clip: content-box;
+  background-size: contain;
+}
+
+.team-member-photo img {
+  display: block;
+  width: 100%;
+}

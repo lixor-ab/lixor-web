@@ -1,0 +1,52 @@
+@import "vars.css";
+
+/* TODO: has to figure out layout for this */
+.section--offer .section-body-part:nth-of-type(3n + 1),
+.section-body-part--team-member:nth-of-type(3n + 1) {
+  background: var(--services-small);
+}
+.section--offer .section-body-part:nth-of-type(3n + 2),
+.section-body-part--team-member:nth-of-type(3n + 2) {
+  background: var(--services-medium);
+}
+.section--offer .section-body-part:nth-of-type(3n + 3),
+.section-body-part--team-member:nth-of-type(3n + 3) {
+  background: var(--services-mixor);
+}
+
+.section--offer .section-body-part {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.section--offer .section-body-part {
+  padding-top: 0;
+}
+
+/* TODO: quick POC hack */
+.section--offer .section-body-part:before {
+  font-size: 17rem;
+  padding-left: -5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  line-height: 10rem;
+  font-family: "Arial-BoldMT", Arial, sans-serif;;
+  color: var(--white);
+}
+
+.section-body-part--small:before {
+  content: "Small";
+  text-indent: -2rem;
+}
+
+.section-body-part--medium:before {
+  content: "Medium";
+  text-indent: -8rem;
+}
+
+.section-body-part--mixor:before {
+  content: "Mixor";
+  text-indent: -12rem;
+}

@@ -1,0 +1,115 @@
+@import "vars.css";
+
+.section {
+  margin: 0 auto;
+  padding: 1.5rem 0; /* 1.5rem 2.5rem 1.5rem 2.5rem; */
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.section h2 {
+  margin-top: 0; /* nasty fix for footer spacing */
+  display: inline-block;
+  font-weight: normal;
+  font-size: 2rem; /*1.6rem;*/
+  margin-bottom: 0.75rem;
+  line-height: 2rem;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
+}
+
+.section h2 + p {
+  margin-top: 0;
+}
+
+.section h3 + p {
+  margin-top: 0;
+}
+
+.section p {
+  margin: 1rem 0;
+}
+
+.section-summary p:last-of-type {
+  margin-bottom: 0;
+}
+
+.section .section-body {
+  display: none;
+}
+.section.expanded .section-body {
+  display: block;
+}
+
+.section.expanded {
+  background: var(--light-eggplant);
+  color: rgba(255, 255, 255, 0.8);
+}
+/* TODO: too much color? */
+/*.section.expanded.section--customers {
+  background: var(--purple);
+}
+.section.expanded.section--team-lixor {
+  background: var(--violet);
+}*/
+.section.expanded h3 {
+  color: var(--wheat);
+}
+
+.section:last-of-type {
+  padding-bottom: 3rem;
+}
+
+/* content will have to sort this out :) */
+.section.expanded {
+  padding-bottom: 0;
+}
+
+.section-body-part:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+.section-summary h2 {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+/* TODO: fix svg arrows instead of character! */
+.section-summary h2:before {
+  position: absolute;
+  left: -0.75rem; /* 0.875rem really half but this feels better */
+  top: 0;  bottom: 0;
+  margin: auto;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--warm-pink);
+  border-radius: 50%;
+  content: "↓"; /*"↓";*/
+  color: var(--black);
+  text-align: center;
+  line-height: 1.75rem; /* needed? */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section.expanded .section-summary h2:before {
+  content: "↑";
+  color: var(--white);
+}
+
+.section .section-summary,
+.section .section-body .section-body-part-inner {
+  max-width: var(--max-width);
+  margin: 0 auto; /* this won't fly :) */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section.expanded .section-summary {
+  margin-bottom: 1.5rem;
+}

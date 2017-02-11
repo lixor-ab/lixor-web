@@ -1,0 +1,32 @@
+@import "vars.css";
+
+/* TODO: sort out the logo :) */
+.logo {
+  color: var(--black);
+  font-family: var(--logo-font);
+  font-weight: 900;
+  line-height: 0.9;
+  padding: 1rem;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.logo--footer {
+  color: var(--white);
+  font-size: 1.75rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.logo--normal {
+  display: inline-block;
+}
+.logo--flip {
+  display: inline-block;
+  transform: scale(-1, -1);
+  margin-left: -1.1rem;
+}
+.logo--dot {
+  color: var(--warm-pink);
+  font-family: serif;
+  line-height: 0; /* TODO: hack */
+  z-index: -1;
+}

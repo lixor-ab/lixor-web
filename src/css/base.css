@@ -1,0 +1,54 @@
+@import "vars.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.25em; /* 20px; */ /* 1em; */ /*16px;*/ /* 16px standard */
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  line-height: 1.37;
+}
+
+/* all we do is crank up the base font since everything is rem */
+/* TODO: use vars somehow? */
+/* TODO: revisit cut points when base now is 1.25em */
+@media (min-width: 30em) and (max-width: 36em) {
+  html {
+   font-size: 1.5em;
+  }
+}
+@media (min-width: 36em) {
+  html {
+    font-size: 1.5em;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: var(--beige);
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  padding: 0 0 0 1.5rem;
+  margin: 1rem 0;
+}
+
+li + li {
+  margin-top: 0.25rem;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 1.25rem;
+  font-style: italic;
+}

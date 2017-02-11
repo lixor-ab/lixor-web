@@ -1,0 +1,32 @@
+
+:root {
+  --max-width: 20rem; /*375px ish*/
+
+  --logo-font: "Helvetica Neue";
+
+  --services-small: #a6b9da;
+  --services-medium: #ffa101;
+  --services-mixor: #ff4476;
+
+  --bg-main: #e5dac5;
+  --beige: #e5dac5;
+
+  --black: #2e2929;
+  --white: #ffffff;
+  --text-darkser: #685b4a;
+
+  --lixor-violet: #b411de;
+  --violet: #b411de;
+  --lixor-pink: #ff4476;
+  --warm-pink: #ff4476;
+  --lixor-fuchsia: #dd11de;
+  --lixor-purple: #8720a2;
+  --purple: #8720a2;
+  --lixor-darkpurple: #7f4e99;
+  --light-eggplant: #7f4e99;
+  --lixor-light-purple: #d77cff;
+
+  --wheat: #ffd48c;
+
+  --linkedin-blue: #0072ad;
+}
