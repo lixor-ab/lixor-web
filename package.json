@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "run-p hugo-dev postcss-dev babel-dev",
     "hugo-dev": "hugo server -ws . --bind=0.0.0.0",
-    "postcss-dev": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css -w",
+    "postcss-dev": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css -w --map",
     "babel-dev": "mkdir -p static/js && babel src/js -o static/js/index.js -w",
-    "dist": "hugo -s . && postcss -c postcss.config.json -o public/static/css/style.css src/css/style.css && mkdir -p public/static/js && babel src/js -o public/static/js/index.js",
+    "dist": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css && mkdir -p static/js && babel src/js | uglifyjs > static/js/index.js && hugo -s .",
     "clean": "rimraf public/* && rimraf static/{js,css}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,12 +30,14 @@
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-preset-env": "^1.1.8",
+    "cssnano": "^3.10.0",
     "npm-run-all": "^4.0.1",
     "postcss": "^5.2.11",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.1.0",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.5.4",
+    "uglify-js": "^2.7.5"
   },
   "dependencies": {}
 }
