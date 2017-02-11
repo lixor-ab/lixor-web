@@ -34,6 +34,7 @@
     "postcss": "^5.2.11",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.1.0",
     "rimraf": "^2.5.4"
   },
   "dependencies": {}
