@@ -6,7 +6,7 @@ name = "team-member"
 
 +++
 
-{{% team-member-photo name="lisbeth" image-link="https://se.linkedin.com/in/?" %}}
+{{% team-member-photo name="lisbeth" image-link="https://se.linkedin.com/in/lisbeth-hedberg-a75aa11" %}}
 ### Lisbeth Hedberg
 > “Varför nöja sig med en häst när du kan rida in på en enhörning”
 

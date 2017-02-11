@@ -6,8 +6,8 @@ name = "team-member"
 
 +++
 
-{{% team-member-photo name="rut" image-link="https://se.linkedin.com/in/rutandersson" %}}
-### Rut Andersson
+{{% team-member-photo name="rut" image-link="https://se.linkedin.com/in/rutanderson" %}}
+### Rut Anderson
 > Orädd effektmakare med systembaserat ledarskap och sociala medier som bread n butter.
 
 * [rut.anderson@lixor.se](mailto:rut.anderson@lixor.se)
