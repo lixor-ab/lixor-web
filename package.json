@@ -8,7 +8,10 @@
     "hugo-dev": "hugo server -ws . --bind=0.0.0.0",
     "postcss-dev": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css -w --map",
     "babel-dev": "mkdir -p static/js && babel src/js -o static/js/index.js -w",
-    "dist": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css && mkdir -p static/js && babel src/js | uglifyjs > static/js/index.js && hugo -s .",
+    "dist": "run-s postcss-dist babel-dist hugo-dist",
+    "hugo-dist": "hugo -s .",
+    "postcss-dist": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css",
+    "babel-dist": "mkdir -p static/js && babel src/js | uglifyjs > static/js/index.js",
     "clean": "rimraf public/* && rimraf static/{js,css}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
