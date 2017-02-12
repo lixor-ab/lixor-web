@@ -4,7 +4,7 @@ before_install:
 - tar -xvf hugo_0.18.1_Linux-64bit.tar.gz
 - ln -s $PWD/hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 $PWD/hugo_0.18.1_linux_amd64/hugo
 - export PATH=$PATH:$PWD/hugo_0.18.1_linux_amd64/
-script: bash ./scripts/deploy.sh
+script: bash ./scripts/build-all-deploy-non-master.sh
 deploy:
   provider: s3
   access_key_id: AKIAJMXCWHXRNIIWE67Q
@@ -14,6 +14,8 @@ deploy:
   skip_cleanup: true
   region: eu-central-1
   local_dir: public
+  on:
+    branch: master
 env:
   global:
   - ENCRYPTION_LABEL: a46ce31c1990
@@ -28,7 +30,7 @@ notifications:
   slack:
     template:
     - |
-      https://lixor-ab.github.io/ update by %{author} %{result}
+      https://www.lixor.se (master branch) or https://lixor-ab.github.io/ (anything else) update by %{author} %{result}
     - |
       Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} in %{duration}
     - '"%{commit_subject}"'
