@@ -1,5 +1,8 @@
 sudo: false
 before_install:
+- pip install --user awscli
+- export PATH=$PATH:$HOME/.local/bin
+install:
 - wget --no-clobber https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz
 - tar -xvf hugo_0.18.1_Linux-64bit.tar.gz
 - ln -s $PWD/hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 $PWD/hugo_0.18.1_linux_amd64/hugo
@@ -7,18 +10,23 @@ before_install:
 script: bash ./scripts/build-all-deploy-non-master.sh
 deploy:
   provider: s3
-  access_key_id: AKIAJMXCWHXRNIIWE67Q
-  secret_access_key:
-    secure: S6Gc+u618zLLFQvhumIU8bCb/GoaoH4aFYJsY0PfIQjO1ak57rOSZLMGHXauxXyfVKOT+j+Ik+0nFGmVz1WOtLL0RT8gc5DjUzBS6uGjLhgU3wxNJU1p8FtTUeM8Sp5GpUSecPt1Tqx76aXvPLVvwaD0tAjfD1/WPJqSk4kdpga7FOEzVRAm4vIP84DAAVSoeCT1DpssC6UzLdFJC5ooLZFDDTPNPGokx35Xmp421N99elU+Kh86PIEb2S6C+7zJkpzzAgeXwI/3P/+pMkaS3r5gksDfK8Nya8Nzyk5RumFmXbmseEZEhQeJ+FXhhGa4bM3LbZE6fjRt0YhfHZRmCnKzZ8ZW5xQK5A/wat7eT7mJuF5oVqYrOLyhHgFDhuuKXdfhzyci5SGXJdbcuaiQwqnts4Yd+cdV4wYfH20bTYZ1OkQOARpyeVRqLaHERya86R5O+ILiz8nuwUAlUa9V2rTjqA5C7gF1Dx7uyF5TYRuE2tW/T9HS7AsWXNE/20oOYJB3M0L7DZVPlMYr3IWeRLSo+yShnjMyX2sgr2Nw9m84ucDw/O+dXwE3Cr0WoG19Gujj3+55Z6JfGtdkWeQYahPGE3Zv4NwTfrMkkPugOXC3NaV7V1uYrqAYoICqwsNb5Lei9+7n7k+EK+xigwwDb4R62wjKxeasEub4/5ymoNM=
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: www.lixor.se
   skip_cleanup: true
   region: eu-central-1
   local_dir: public
   on:
     branch: master
+after_deploy:
+- aws configure set preview.cloudfront true
+- aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 env:
   global:
   - ENCRYPTION_LABEL: a46ce31c1990
+  - CLOUDFRONT_DISTRIBUTION_ID: E262ZG7MIQ9Y64
+  - AWS_ACCESS_KEY_ID: AKIAJHZHH4VEWM647INA
+  - secure: CexHtOH3xmQ/vQ34YDnX1pVxRBDXsQ/a8Pp8+iaVjD1MfsQXWFQp8i34h0rnk/XefeC9MRs0huvU38lkuv508O97x4DxIujJIokLg2EGWF9gB4fYeQtXBfiV6ePHDJfFvpcUaaGI4OXYKg+fuiUtIp/r5PL0788CUam4y7fkkj2uMBXsJN+iWFxWDQL9vVuglxhVoRKdWkLxWu5TO8L7NMnka7olAVSLIR23FTCpuIJEPee47qxE/etxZwQmFq70xVlesmI2h4/D+tZ0IbZVGq4n1UpRgSOPziXUdkgf1/a47LPAXeE6N1HXUan39iE/tuFMCSkSdKKNVBRA4j3+MPhvfhXttuHqojH2LlLNOgNO1d0ZXSQsXkBTLd9190ycmP7qrMPhqpqKgzaBkHvuxbzJgBHWgwN1CdcdoVPAYYd20uDRzw3oFOtbrK/m5xQ9bxb55/o1n9+j09GefpRaWyAS0+EmAWhJXSNQj5sne0R8jQpnUUqOCNBsoU2mSte21jobFNQtNvrvC+nOftzA+krnzpFfRcSAS6B7q7Q2b2omUwtELMA9eujmfeFGftw/aq4CirTPPI1WSIexHRDtkeqedTxkHrCCMj1MXgvUFDjvynjvKIAz26/GQZdt244B4kg6HUTY/ckDyXObS2CUNipFVah6/D+umc4QG3kxseY=
 language: node_js
 node_js:
 - stable
