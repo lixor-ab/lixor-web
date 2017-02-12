@@ -3,24 +3,19 @@
 [![Build Status](https://travis-ci.org/lixor-ab/lixor-web.svg?branch=master)](https://travis-ci.org/lixor-ab/lixor-web)
 
 ## TODO
-* show Torfinn & Rut
-    * go over fonts & line height
-    * animations/transitions!
-    * show hugo
-* add SVG logos (?)
-    * and full screen graphics? (show footer)
-* automate production properly with correct domain + CDN (?)
-    * show them again :)
-* robots.txt et al
+* remove quote in footer
 * do wider screens
 * add analytics (google?)
+* invalidate cloud front on release - done
+	* only invalidate on actual diff in content
+* empty s3-bucket?
+* clean up all deploy stuff
+* rev md5 hash for for-ever cache? (at least in media/)
+* image optimizations (fix lighthouse score :) )
+* compress as part of build (?)
 * add service worker for offline exprience
    * maybe, just maybe, we should wait for some analytics data ;)
 * add article / blog post template
-* add way to navigate main -> post
-* add drop down function on arrows
-* change picture of Rut
-* Remove quote in footer
 
 
 ## Design prototype by Torfin
@@ -37,7 +32,9 @@ https://gohugo.io/content/example/ & in [content](content).
 ## The rest
 * postcss-cssnext for styling
 * babel for js
-* travis-ci for CI & deploy (see [.travis.yml](.travis.yml) & [scripts/deploy.sh](scripts/deploy.sh))
+* travis-ci for CI & deploy (see [.travis.yml](.travis.yml) & [scripts/build-all-deploy-non-master.sh](scripts/build-all-deploy-non-master.sh))
+  * gh-pages for staging
+  * amazon S3 & Cloudfront for production
 
 
 ## Basic dev env setup
@@ -53,17 +50,23 @@ https://gohugo.io/content/example/ & in [content](content).
 
 All commands in different shells:
 
-    > yarn run hugo-dev
-    > yarn run postcss-dev
-    > yarn run babel-dev
+    > yarn run dev
 
 Edit away & it's livereloaded at http://localhost:1313 (listening on 0.0.0.0 so your IP as well).
 
 
 ## Deploy
+
+### Production
+Deploy to https://www.lixor.se happens when master is pushed to github. Travis
+picks this up & deploys to Amazon S3 & then invalidates the Amazon Cloudfront
+CDN. Can take a couple of minutes.
+
+### Staging (i.e. not master :) )
 Deploy (to github pages), happens via travis-ci. Travis pushed the built files to master branch
 at git@github.com:lixor-ab/lixor-ab.github.io.git.
 
 Right now it can be accessed at: https://lixor-ab.github.io/.
 
-
+So the latest push to any branch except master will be live there. Might need some work.
+(robots.txt is changed in testing env so google et al should not index this one)
