@@ -2,7 +2,6 @@ sudo: false
 before_install:
 - pip install --user awscli
 - export PATH=$PATH:$HOME/.local/bin
-install:
 - wget --no-clobber https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz
 - tar -xvf hugo_0.18.1_Linux-64bit.tar.gz
 - ln -s $PWD/hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 $PWD/hugo_0.18.1_linux_amd64/hugo
