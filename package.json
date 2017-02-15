@@ -13,6 +13,7 @@
     "postcss-dist": "postcss -c postcss.config.json -o static/css/style.css src/css/style.css",
     "babel-dist": "mkdir -p static/js && babel src/js | uglifyjs > static/js/index.js",
     "inline-source-dist": "inline-source public/index.html public/index.html --root public/",
+    "minify-images": "./scripts/minify-images.js",
     "clean": "rimraf public/* && rimraf static/{js,css}",
     "lighthouse": "lighthouse",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,6 +37,9 @@
     "babel-cli": "^6.22.2",
     "babel-preset-env": "^1.1.8",
     "cssnano": "^3.10.0",
+    "imagemin": "^5.2.2",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-svgo": "^5.2.0",
     "inline-source-cli": "^1.2.0",
     "lighthouse": "^1.5.1",
     "npm-run-all": "^4.0.1",
