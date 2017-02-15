@@ -9,8 +9,9 @@
     <meta name="description" content="Lixor site...">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Lora" rel="stylesheet">
+    {{/* inline and keep fonts blocking for now - TODO: no need for inline at all then? caching is better? */}}
+    <link inline rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i|Lora">
   </head>
   <body>
 
@@ -56,6 +57,6 @@
 
     {{ partial "footer.html" . }}
 
-    <script src="js/index.js"></script>
+    <script async src="js/index.js"></script>
   </body>
 </html>
