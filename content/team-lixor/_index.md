@@ -7,5 +7,4 @@ groups_weight = 3
 +++
 
 ## Team Lixor.
-Med Lixor får du rätt känsla och driv i projekten – kunskapen får du på köpet.
-Kolla in de som jobbar här.
+Med Lixor får du rätt känsla och driv i projekten. Här hittar du oss som jobbar här!
