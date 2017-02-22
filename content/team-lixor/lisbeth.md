@@ -11,4 +11,4 @@ name = "team-member"
 > “Varför nöja sig med en häst när du kan rida in på en enhörning”
 
 * [lisbeth.hedberg@lixor.se](mailto:lisbeth.hedberg@lixor.se)
-* [070-765 94 64](tel:+46707659464)
+* [070-523 26 73](tel:+46707659464)
