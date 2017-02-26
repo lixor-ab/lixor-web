@@ -53,6 +53,7 @@ yarn run dist
 # Now let's go have some fun with the cloned repo
 cd $DIST_DIR
 mv -f robots.not-public.txt robots.txt
+rm -f .gitignore # TODO: fix this proper
 
 git config user.name "Travis CI"
 git config user.email "ulf@alfhild.io"
