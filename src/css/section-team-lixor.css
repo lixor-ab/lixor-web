@@ -30,10 +30,10 @@
 }
 
 .section--team-lixor a[href^="mailto:"]:before {
-  background-image: url("assets/media/icon/email.svg");
+  background-image: url("../../assets/media/icon/email.svg");
 }
 .section--team-lixor a[href^="tel:"]:before {
-  background-image: url("assets/media/icon/mobile.svg");
+  background-image: url("../../assets/media/icon/mobile.svg");
 }
 
 .section-body-part--team-member {
