@@ -12,12 +12,8 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-  script:
-    - aws s3 sync public s3://$S3_BUCKET --region eu-central-1 --exclude 'assets/*' --delete
-    - aws s3 sync public/assets s3://$S3_BUCKET/assets --region eu-central-1 --cache-control "max-age=31536000" --delete
-after_deploy:
-- aws configure set preview.cloudfront true
-- aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+  script: bash ./scripts/s3-deploy.sh
+after_deploy: bash ./scripts/cloudfront-invalidation.sh
 env:
   global:
   - S3_BUCKET: www.lixor.se
