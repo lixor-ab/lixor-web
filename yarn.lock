@@ -45,7 +45,7 @@ aproba@^1.0.3:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.1.1.tgz#95d3600f07710aa0e9298c726ad5ecf2eacbabab"
 
-archive-type@^3.0.0:
+archive-type@^3.0.0, archive-type@^3.0.1:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/archive-type/-/archive-type-3.2.0.tgz#9cd9c006957ebe95fadad5bd6098942a813737f6"
   dependencies:
@@ -127,6 +127,10 @@ assert-plus@^0.2.0:
 assert-plus@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
+
+async-each-series@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/async-each-series/-/async-each-series-1.1.0.tgz#f42fd8155d38f21a5b8ea07c28e063ed1700b138"
 
 async-each@^1.0.0:
   version "1.0.1"
@@ -681,6 +685,18 @@ bcrypt-pbkdf@^1.0.0:
 beeper@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/beeper/-/beeper-1.1.1.tgz#e6d5ea8c5dad001304a70b22638447f69cb2f809"
+
+bin-build@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/bin-build/-/bin-build-2.2.0.tgz#11f8dd61f70ffcfa2bdcaa5b46f5e8fedd4221cc"
+  dependencies:
+    archive-type "^3.0.1"
+    decompress "^3.0.0"
+    download "^4.1.2"
+    exec-series "^1.0.0"
+    rimraf "^2.2.6"
+    tempfile "^1.0.0"
+    url-regex "^3.0.0"
 
 bin-check@^2.0.0:
   version "2.0.0"
@@ -1243,7 +1259,7 @@ devtools-timeline-model@1.1.6:
     chrome-devtools-frontend "1.0.401423"
     resolve "1.1.7"
 
-download@^4.0.0:
+download@^4.0.0, download@^4.1.2:
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/download/-/download-4.4.3.tgz#aa55fdad392d95d4b68e8c2be03e0c2aa21ba9ac"
   dependencies:
@@ -1373,6 +1389,13 @@ exec-buffer@^3.0.0:
     pify "^2.3.0"
     rimraf "^2.5.4"
     tempfile "^1.0.0"
+
+exec-series@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/exec-series/-/exec-series-1.0.3.tgz#6d257a9beac482a872c7783bc8615839fc77143a"
+  dependencies:
+    async-each-series "^1.1.0"
+    object-assign "^4.1.0"
 
 execa@^0.5.0:
   version "0.5.1"
@@ -1667,6 +1690,14 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
+gifsicle@^3.0.0:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/gifsicle/-/gifsicle-3.0.4.tgz#f45cb5ed10165b665dc929e0e9328b6c821dfa3b"
+  dependencies:
+    bin-build "^2.0.0"
+    bin-wrapper "^3.0.0"
+    logalot "^2.0.0"
+
 gl-matrix@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/gl-matrix/-/gl-matrix-2.3.2.tgz#aac808c74af7d5db05fe04cb60ca1a0fcb174d74"
@@ -1886,6 +1917,22 @@ gulp-if@^2.0.2:
     ternary-stream "^2.0.1"
     through2 "^2.0.1"
 
+gulp-imagemin@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/gulp-imagemin/-/gulp-imagemin-3.1.1.tgz#05029523228114a0dfb19e72b114c5e25c455f20"
+  dependencies:
+    chalk "^1.0.0"
+    gulp-util "^3.0.0"
+    imagemin "^5.0.0"
+    plur "^2.0.0"
+    pretty-bytes "^4.0.2"
+    through2-concurrent "^1.1.0"
+  optionalDependencies:
+    imagemin-gifsicle "^5.0.0"
+    imagemin-jpegtran "^5.0.0"
+    imagemin-optipng "^5.1.0"
+    imagemin-svgo "^5.1.0"
+
 gulp-match@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/gulp-match/-/gulp-match-1.0.3.tgz#91c7c0d7f29becd6606d57d80a7f8776a87aba8e"
@@ -2064,6 +2111,14 @@ image-ssim@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/image-ssim/-/image-ssim-0.2.0.tgz#83b42c7a2e6e4b85505477fe6917f5dbc56420e5"
 
+imagemin-gifsicle@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/imagemin-gifsicle/-/imagemin-gifsicle-5.1.0.tgz#2e4ddcda2a109b221cabaec498e1e2dd28ca768f"
+  dependencies:
+    exec-buffer "^3.0.0"
+    gifsicle "^3.0.0"
+    is-gif "^1.0.0"
+
 imagemin-jpeg-recompress@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/imagemin-jpeg-recompress/-/imagemin-jpeg-recompress-5.1.0.tgz#41b8294ec6b636a5fcbae27c902491fa64c71198"
@@ -2072,14 +2127,30 @@ imagemin-jpeg-recompress@^5.1.0:
     is-jpg "^1.0.0"
     jpeg-recompress-bin "^3.0.1"
 
-imagemin-svgo@^5.2.0:
+imagemin-jpegtran@^5.0.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/imagemin-jpegtran/-/imagemin-jpegtran-5.0.2.tgz#e6882263b8f7916fddb800640cf75d2e970d2ad6"
+  dependencies:
+    exec-buffer "^3.0.0"
+    is-jpg "^1.0.0"
+    jpegtran-bin "^3.0.0"
+
+imagemin-optipng@^5.1.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/imagemin-optipng/-/imagemin-optipng-5.2.1.tgz#d22da412c09f5ff00a4339960b98a88b1dbe8695"
+  dependencies:
+    exec-buffer "^3.0.0"
+    is-png "^1.0.0"
+    optipng-bin "^3.0.0"
+
+imagemin-svgo@^5.1.0, imagemin-svgo@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/imagemin-svgo/-/imagemin-svgo-5.2.0.tgz#5130614ac18cb7b2b1ca005386681c51ceb2bb34"
   dependencies:
     is-svg "^2.0.0"
     svgo "^0.7.0"
 
-imagemin@^5.2.2:
+imagemin@^5.0.0, imagemin@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/imagemin/-/imagemin-5.2.2.tgz#e14a0f357f8810266875eda38634eeb96f6fbd16"
   dependencies:
@@ -2132,6 +2203,14 @@ invariant@^2.2.0, invariant@^2.2.2:
 invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
+
+ip-regex@^1.0.1:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-1.0.3.tgz#dc589076f659f419c222039a33316f1c7387effd"
+
+irregular-plurals@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/irregular-plurals/-/irregular-plurals-1.2.0.tgz#38f299834ba8c00c30be9c554e137269752ff3ac"
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -2216,6 +2295,10 @@ is-fullwidth-code-point@^1.0.0:
   dependencies:
     number-is-nan "^1.0.0"
 
+is-gif@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-gif/-/is-gif-1.0.0.tgz#a6d2ae98893007bffa97a1d8c01d63205832097e"
+
 is-glob@^2.0.0, is-glob@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-2.0.1.tgz#d096f926a3ded5600f3fdfd91198cb0888c2d863"
@@ -2262,6 +2345,10 @@ is-obj@^1.0.0:
 is-plain-obj@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
+
+is-png@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-png/-/is-png-1.0.0.tgz#3d80373fe9b89d65fd341f659d3fc0a1135e718a"
 
 is-posix-bracket@^0.1.0:
   version "0.1.1"
@@ -2390,6 +2477,14 @@ jpeg-recompress-bin@^3.0.1:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
+jpegtran-bin@^3.0.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/jpegtran-bin/-/jpegtran-bin-3.2.0.tgz#f60ecf4ae999c0bdad2e9fbcdf2b6f0981e7a29b"
+  dependencies:
+    bin-build "^2.0.0"
+    bin-wrapper "^3.0.0"
+    logalot "^2.0.0"
+
 js-base64@^2.1.9:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
@@ -2464,6 +2559,12 @@ lazy-cache@^1.0.3:
 lazy-req@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/lazy-req/-/lazy-req-1.1.0.tgz#bdaebead30f8d824039ce0ce149d4daa07ba1fac"
+
+lazypipe@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/lazypipe/-/lazypipe-1.0.1.tgz#1471aef6b37a340d51c34df44699dcef064c1940"
+  dependencies:
+    stream-combiner "*"
 
 lazystream@^1.0.0:
   version "1.0.0"
@@ -3014,6 +3115,14 @@ options@>=0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/options/-/options-0.0.6.tgz#ec22d312806bb53e731773e7cdaefcf1c643128f"
 
+optipng-bin@^3.0.0:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/optipng-bin/-/optipng-bin-3.1.2.tgz#18c5a3388ed5d6f1e6ef1998ab0a6bcc8bdd0ca0"
+  dependencies:
+    bin-build "^2.0.0"
+    bin-wrapper "^3.0.0"
+    logalot "^2.0.0"
+
 orchestrator@^0.3.0:
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/orchestrator/-/orchestrator-0.3.8.tgz#14e7e9e2764f7315fbac184e506c7aa6df94ad7e"
@@ -3174,6 +3283,12 @@ pleeease-filters@^3.0.0:
   dependencies:
     onecolor "~2.4.0"
     postcss "^5.0.4"
+
+plur@^2.0.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/plur/-/plur-2.1.2.tgz#7482452c1a0f508e3e344eaec312c91c29dc655a"
+  dependencies:
+    irregular-plurals "^1.0.0"
 
 postcss-apply@^0.3.0:
   version "0.3.0"
@@ -3619,6 +3734,10 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
+pretty-bytes@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
+
 pretty-hrtime@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
@@ -3939,7 +4058,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.5.4:
+rimraf@2, rimraf@^2.2.6, rimraf@^2.5.4:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
   dependencies:
@@ -4126,7 +4245,7 @@ stream-combiner2@^1.1.1:
     duplexer2 "~0.1.0"
     readable-stream "^2.0.2"
 
-stream-combiner@~0.0.4:
+stream-combiner@*, stream-combiner@~0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/stream-combiner/-/stream-combiner-0.0.4.tgz#4d5e433c185261dde623ca3f44c586bcf5c4ad14"
   dependencies:
@@ -4303,6 +4422,12 @@ ternary-stream@^2.0.1:
     merge-stream "^1.0.0"
     through2 "^2.0.1"
 
+through2-concurrent@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/through2-concurrent/-/through2-concurrent-1.1.1.tgz#11cb4ea4c9e31bca6e4c1e6dba48d1c728c3524b"
+  dependencies:
+    through2 "^2.0.0"
+
 through2-filter@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/through2-filter/-/through2-filter-2.0.0.tgz#60bc55a0dacb76085db1f9dae99ab43f83d622ec"
@@ -4454,6 +4579,12 @@ url-parse-lax@^1.0.0:
   resolved "https://registry.yarnpkg.com/url-parse-lax/-/url-parse-lax-1.0.0.tgz#7af8f303645e9bd79a272e7a14ac68bc0609da73"
   dependencies:
     prepend-http "^1.0.1"
+
+url-regex@^3.0.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/url-regex/-/url-regex-3.2.0.tgz#dbad1e0c9e29e105dd0b1f09f6862f7fdb482724"
+  dependencies:
+    ip-regex "^1.0.1"
 
 user-home@^1.1.1:
   version "1.1.1"
