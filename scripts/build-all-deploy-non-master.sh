@@ -58,6 +58,7 @@ git config user.name "Travis CI"
 git config user.email "ulf@alfhild.io"
 
 # add to see new files in diff - this does not delete files though, fix!
+# TODO: will ever deleting previous files destroy old references and/or cached links?
 git add -A .
 # If there are no changes (e.g. this is a README update) then just bail.
 if [ -z "`git diff --cached`" ] ; then

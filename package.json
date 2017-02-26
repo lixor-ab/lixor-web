@@ -14,7 +14,7 @@
     "babel-dist": "mkdir -p static/js && babel src/js | uglifyjs > static/js/index.js",
     "optimize-dist": "scripts/optimize.js pre-public public",
     "minify-images": "./scripts/minify-images.js",
-    "clean": "rimraf public && rimraf pre-public && rimraf static/{js,css}",
+    "clean": "rimraf public/* && rimraf pre-public/* && rimraf static/{js,css}",
     "lighthouse": "lighthouse",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
