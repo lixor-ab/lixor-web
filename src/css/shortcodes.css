@@ -14,7 +14,7 @@
 .team-member-photo:after {
   content: "";
   position: absolute;
-  background-image: url("../media/icon/linkedin.svg");
+  background-image: url("assets/media/icon/linkedin.svg");
   width: 2.5rem;
   height: 2.5rem;
   bottom: 1rem;
