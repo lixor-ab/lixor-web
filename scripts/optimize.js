@@ -17,7 +17,7 @@ const args = process.argv.slice(2);
 const inDir = args[0];
 const outDir = args[1];
 
-const assetMedia = 'media/**/*.{svg,jpg,jpeg,png}';
+const assetMedia = 'assets/media/**/*.{svg,jpg,jpeg,png}';
 const assetMiddle = '**/*.{css,js}';
 
 const mediaPipeline = lazypipe()

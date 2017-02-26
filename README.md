@@ -10,7 +10,6 @@
 	* only invalidate on actual diff in content
 * empty s3-bucket?
 * clean up all deploy stuff
-* rev md5 hash for for-ever cache? (at least in media/)
 * image optimizations (fix lighthouse score :) )
 * compress as part of build (?)
 * add service worker for offline exprience

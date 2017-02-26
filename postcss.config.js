@@ -17,7 +17,7 @@ module.exports = {
 // result – postcss result object
   // }
   // "postcss-urlrev": {
-  //   relativePath: 'static/media/',
+  //   relativePath: 'static/assets/media/',
   //   replacer: (url, hash) => {
   //     const dot = url.lastIndexOf('.')
   //     return `${url.substring(0, dot)}.${hash.substring(0,8)}${url.substring(dot)}`

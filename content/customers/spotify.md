@@ -6,7 +6,7 @@ weight = 2
 
 +++
 
-{{% image src="media/logo/spotify.svg" class="customer-logo" %}}
+{{% image src="assets/media/logo/spotify.svg" class="customer-logo" %}}
 ### Spotify
 Spotify är en av Sveriges snabbst växande unga företag med en agil organisation som nått framgång genom att arbeta på ett agilt och prestigelöst sätt. Lixor hjälper Spotify med:
 

@@ -6,7 +6,7 @@ weight = 1
 
 +++
 
-{{% image src="media/logo/skandia.svg" class="customer-logo customer-logo--skandia" %}}
+{{% image src="assets/media/logo/skandia.svg" class="customer-logo customer-logo--skandia" %}}
 ### Skandia
 Skandias marknadsavdelning stod inför en agil transformation. Så här kickstartade vi deras nya agila arbetsätt:
 
