@@ -6,7 +6,7 @@ weight = 4
 
 +++
 
-{{% image src="media/logo/bonnier.svg" class="customer-logo" %}}
+{{% image src="assets/media/logo/bonnier.svg" class="customer-logo" %}}
 ### Bonnier
 Bonnier ville ta fram en ny digital produkt för barn med eböcker och ljudböcker. Lixor gjorde detta genom att:
 

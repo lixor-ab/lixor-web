@@ -6,7 +6,7 @@ weight = 3
 
 +++
 
-{{% image src="media/logo/klarna.svg" class="customer-logo" %}}
+{{% image src="assets/media/logo/klarna.svg" class="customer-logo" %}}
 ### Klarna
 Klarna är ledande inom fintech och växer riktigt snabbt med bibehållen lönsamhet. Lixor har bidragit till detta genom att:
 

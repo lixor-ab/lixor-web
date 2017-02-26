@@ -5,7 +5,7 @@ const recompress = require('imagemin-jpeg-recompress');
 const svgo = require('imagemin-svgo');
 
  // TODO: take args
-imagemin(['static/media/**/*.{jpg,svg}'], 'build/', {
+imagemin(['static/assets/media/**/*.{jpg,svg}'], 'build/', {
     plugins: [
         recompress({
           method: 'smallfry',
