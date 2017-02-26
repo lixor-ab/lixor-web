@@ -53,12 +53,14 @@ yarn run dist
 # Now let's go have some fun with the cloned repo
 cd $DIST_DIR
 mv -f robots.not-public.txt robots.txt
+rm -f .gitignore # TODO: fix this proper
 
 git config user.name "Travis CI"
 git config user.email "ulf@alfhild.io"
 
 # add to see new files in diff - this does not delete files though, fix!
-git add .
+# TODO: will ever deleting previous files destroy old references and/or cached links?
+git add -A .
 # If there are no changes (e.g. this is a README update) then just bail.
 if [ -z "`git diff --cached`" ] ; then
   echo "No changes to the generated site on this push; exiting."
