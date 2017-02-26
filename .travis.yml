@@ -8,20 +8,19 @@ before_install:
 - export PATH=$PATH:$PWD/hugo_0.18.1_linux_amd64/
 script: bash ./scripts/build-all-deploy-non-master.sh
 deploy:
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: www.lixor.se
+  provider: script
   skip_cleanup: true
-  region: eu-central-1
-  local_dir: public
   on:
     branch: master
+  script:
+    - aws s3 sync public s3://$S3_BUCKET --region eu-central-1 --exclude 'assets/*' --delete
+    - aws s3 sync public/assets s3://$S3_BUCKET/assets --region eu-central-1 --cache-control "max-age=31536000" --delete
 after_deploy:
 - aws configure set preview.cloudfront true
 - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 env:
   global:
+  - S3_BUCKET: www.lixor.se
   - ENCRYPTION_LABEL: a46ce31c1990
   - CLOUDFRONT_DISTRIBUTION_ID: E262ZG7MIQ9Y64
   - AWS_ACCESS_KEY_ID: AKIAJHZHH4VEWM647INA
