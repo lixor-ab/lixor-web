@@ -8,9 +8,10 @@ weight = 3
 
 {{% image src="assets/media/logo/klarna.svg" class="customer-logo" %}}
 ### Klarna
-Klarna är ledande inom fintech och växer riktigt snabbt med bibehållen lönsamhet. Lixor har bidragit till detta genom att:
+Klarna is one of the leading fintech companies in the Nordic and keep on growing while maintaining profitability. Lixor have contributed in the company by: 
 
-* Leverera Klarnas högst prioriterade projekt på tid och budget.
-* Lixors arbetssätt blev grunden för ett standardiserat sätt att jobba med projekt.
+* Delivering a top priority project on time and within budget
+* Set up a workflow that is now a standardized way of running initiatives. 
 
-[Jag vill veta mer!](mailto:lixor@lixor.se?subject=ber%C3%A4tta%20mer&body=Hej%20Team%20Lixor!%20Jag%20vill%20g%C3%A4rna%20veta%20mer%20om%20hur%20ni%20arbetar.%20H%C3%B6r%20av%20er%20till%20mig%2C%20V%C3%A4nliga%20h%C3%A4lsningar%20(ditt%20namn%20h%C3%A4r))
+
+[Tell me more!](mailto:team@lixor.se?subject=Tell%20me%20more!&body=Hi!%20Please%20contact%20me%20so%20we%20can%20have%20coffe%20and%20talk%20about%20agile%20ways%20of%20working))
