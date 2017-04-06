@@ -15,4 +15,4 @@ Bonnier ran an initiative to create a digital product focused on e-books and aud
 * Setting up workflow in order for the steering group to maintain the process themselves
 
 
-[Tell me more!](mailto:team@lixor.se?subject=Tell%20me%20more!&body=Hi!%20Please%20contact%20me%20so%20we%20can%20have%20coffe%20and%20talk%20about%20agile%20ways%20of%20working))
+[Tell me more!](mailto:team@lixor.se?subject=Tell%20me%20more!&body=Hi!%20Please%20contact%20me%20so%20we%20can%20have%20coffe%20and%20talk%20about%20agile%20ways%20of%20working)
