@@ -6,5 +6,5 @@ groups_weight = 1
 
 +++
 
-## Kunder.
-Spotify, Klarna och Bonnier är några av våra kunder. Men det finns fler!
+## Clients
+Spotify, Klarna and the Media Concern Bonner are some of our clients. But there are more!
