@@ -15,7 +15,6 @@ header {
 .header-graphics {
   position: absolute;
   top: 0;
-  z-index: 1;
   max-width: var(--max-width);
   left: 50%;
   transform: translateX(-50%)
