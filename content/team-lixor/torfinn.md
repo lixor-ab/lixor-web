@@ -8,7 +8,7 @@ name = "team-member"
 
 {{% team-member-photo name="torfinn" image-link="https://se.linkedin.com/in/torfinn" %}}
 ### Torfinn Almers
-> Tänkande och visualiserande designleder vars bidrag alltid förhöjer resultatet.
+> Thinking and visualizing design lead Whos every contribution excels the result.
 
 * [torfinn.almers@lixor.se](mailto:torfinn.almers@lixor.se)
 * [070-765 94 64](tel:+46707659464)
