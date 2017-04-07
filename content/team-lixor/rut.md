@@ -8,7 +8,7 @@ name = "team-member"
 
 {{% team-member-photo name="rut" image-link="https://se.linkedin.com/in/rutanderson" %}}
 ### Rut Anderson
-> Orädd effektmakare med systembaserat ledarskap och sociala medier som bread n butter.
+> Fearless. System based leadership and social media expert
 
 * [rut.anderson@lixor.se](mailto:rut.anderson@lixor.se)
 * [070-877 97 56](tel:+46708779756)
