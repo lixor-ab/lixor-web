@@ -9,6 +9,7 @@
   padding: 1rem;
   font-size: 4.5rem;
   text-align: center;
+  position: relative;
 }
 .logo--footer {
   color: var(--white);
