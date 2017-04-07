@@ -8,10 +8,10 @@ weight = 5
 
 {{% image src="assets/media/logo/expressen.svg" class="customer-logo" %}}
 ### Expressen
-På mindre än ett år byggde vi en agil utvecklingsavdelning från 0 till 50 anställda och 7 tvärfuktionella team. Lixor bidrog till detta genom att:
+In less than a year we successfully built an agile development team from 0 to 50 employees consisting of 7 cross functional teams. Lixor contributed by: 
 
-* Coacha organisationen.
-* Hjälpa ledningsgruppen arbeta måldrivet med en 12-veckorsplan och täta uppföljningar.
-* Talent management (hitta, rekrytera och behålla kollegor).
+* Coaching the organization
+* Help the steering group to work goal oriented with a 12 week plan and close follow ups
+* Talent management 
 
-[Jag vill veta mer!](mailto:lixor@lixor.se?subject=ber%C3%A4tta%20mer&body=Hej%20Team%20Lixor!%20Jag%20vill%20g%C3%A4rna%20veta%20mer%20om%20hur%20ni%20arbetar.%20H%C3%B6r%20av%20er%20till%20mig%2C%20V%C3%A4nliga%20h%C3%A4lsningar%20(ditt%20namn%20h%C3%A4r))
+[Tell me more!](mailto:team@lixor.se?subject=Tell%20me%20more!&body=Hi!%20Please%20contact%20me%20so%20we%20can%20have%20coffe%20and%20talk%20about%20agile%20ways%20of%20working)

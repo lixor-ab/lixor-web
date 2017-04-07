@@ -6,5 +6,6 @@ groups_weight = 2
 
 +++
 
-## Erbjudande.
-Small, Medium eller Mixor? Det väljer du här.
+## Our offering
+Small, medium or Mixor? Find your choices below
+

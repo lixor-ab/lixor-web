@@ -7,4 +7,5 @@ groups_weight = 3
 +++
 
 ## Team Lixor.
-Med Lixor får du rätt känsla och driv i projekten. Här hittar du oss som jobbar här!
+Lixor sets the right tone and ambition for your projects and you gain knowledge on the way!
+Take a look at the team.

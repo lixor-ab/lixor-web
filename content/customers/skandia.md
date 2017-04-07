@@ -2,16 +2,17 @@
 date = "2017-02-04T20:11:12+01:00"
 title = "skandia"
 name = "skandia"
-weight = 1
+weight = 2
 
 +++
 
 {{% image src="assets/media/logo/skandia.svg" class="customer-logo customer-logo--skandia" %}}
 ### Skandia
-Skandias marknadsavdelning stod inför en agil transformation. Så här kickstartade vi deras nya agila arbetsätt:
+The marketing department of Skandia were about to embark on an agile transformation. These are some of the steps we took to kickstart their agile way of working.
 
-* Utbilda inom agilt och leant med upplevelsebaserat lärande.
-* Ta fram mätbara mål och en 12-veckorsplan tillsammans med ledningsgruppen.
-* Coacha o bolla med ledningsgruppen så att de kunde fortsätta driva processen själva.
+* Agile and lean training focusing on experience based learning
+* Structure a 12 week plan consisting of measurable goals together with the steering group
+* Setting up workflow in order for the steering group to maintain the process themselves
 
-[Jag vill veta mer!](mailto:lixor@lixor.se?subject=ber%C3%A4tta%20mer&body=Hej%20Team%20Lixor!%20Jag%20vill%20g%C3%A4rna%20veta%20mer%20om%20hur%20ni%20arbetar.%20H%C3%B6r%20av%20er%20till%20mig%2C%20V%C3%A4nliga%20h%C3%A4lsningar%20(ditt%20namn%20h%C3%A4r))
+[Tell me more!](mailto:team@lixor.se?subject=Tell%20me%20more!&body=Hi!%20Please%20contact%20me%20so%20we%20can%20have%20coffe%20and%20talk%20about%20agile%20ways%20of%20working)
+
