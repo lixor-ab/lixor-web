@@ -7,4 +7,4 @@ groups_weight = 1
 +++
 
 ## Clients
-Spotify, Klarna and the Bonnier Media Concern are some of our clients. But there are more!
+Spotify, Klarna and the Bonnier Group are some of our clients. But there are more!
