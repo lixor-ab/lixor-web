@@ -8,9 +8,9 @@ weight = 1
 
 {{% image src="assets/media/logo/skandia.svg" class="customer-logo customer-logo--skandia" %}}
 ### Skandia
-The marketing department of Skandia was facing an agile transformation. These are some of the steps we took to kickstart their agile way of working.
+The marketing department of Skandia were about to embark on an agile transformation. These are some of the steps we took to kickstart their agile way of working.
 
-* Agile and lean training focusing on experience driven learning
+* Agile and lean training focusing on experience based learning
 * Structure a 12 week plan consisting of measurable goals together with the steering group
 * Setting up workflow in order for the steering group to maintain the process themselves
 
