@@ -8,7 +8,7 @@ name = "team-member"
 
 {{% team-member-photo name="lisbeth" image-link="https://se.linkedin.com/in/lisbeth-hedberg-a75aa11" %}}
 ### Lisbeth Hedberg
-> “Varför nöja sig med en häst när du kan rida in på en enhörning”
+> “Why set on a horse when you can ride in on a unicorn?”
 
 * [lisbeth.hedberg@lixor.se](mailto:lisbeth.hedberg@lixor.se)
 * [070-523 26 73](tel:+46707659464)
