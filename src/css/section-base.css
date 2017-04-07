@@ -35,10 +35,6 @@
   margin: 1rem 0;
 }
 
-.section-summary p:last-of-type {
-  margin-bottom: 0;
-}
-
 .section .section-body {
   display: none;
 }
@@ -72,6 +68,14 @@
 
 .section-body-part:last-of-type {
   padding-bottom: 1.5rem;
+}
+
+.section-summary {
+  cursor: pointer;
+}
+
+.section-summary p:last-of-type {
+  margin-bottom: 0;
 }
 
 .section-summary h2 {
